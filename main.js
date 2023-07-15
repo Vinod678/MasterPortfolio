@@ -149,18 +149,18 @@ window.onbeforeunload = function () {
 
 
 
-var text1 = "Hello! Hi there, ";
-var delay = 50; // delay between characters, in milliseconds
-var hello = document.querySelector(".hello");
+// var text1 = "Hello! Hi there, ";
+// var delay = 50; // delay between characters, in milliseconds
+// var hello = document.querySelector(".hello");
 
-function type1() {
-  if (text1.length > 0) {
-    hello.innerHTML += text1.charAt(0);
-    text1 = text1.substring(1);
-    setTimeout(type1, delay);
-  }
-}
-type1();
+// function type1() {
+//   if (text1.length > 0) {
+//     hello.innerHTML += text1.charAt(0);
+//     text1 = text1.substring(1);
+//     setTimeout(type1, delay);
+//   }
+// }
+// type1();
 
 
 
@@ -275,8 +275,9 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
 
 
   // new header 
-  hamburger = document.querySelector(".hamburger");
-        nav = document.querySelector("nav");
-        hamburger.onclick = function() {
-            nav.classList.toggle("active");
-        }
+  // hamburger = document.querySelector(".hamburger");
+  //       nav = document.querySelector("nav");
+  //       hamburger.onclick = function() {
+  //           nav.classList.toggle("active");
+  //       }
+// Nav disappear ,when user clicked on any <a>

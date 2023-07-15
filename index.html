@@ -13,9 +13,19 @@
   <meta name="author" content="Vinod">
   <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
   <meta http-equiv="refresh" content="4500000">
-  
+
   <link rel="icon" type="images/x-icon" href="assets/img/vy.jpg" />
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="stylex.css">
+  <link rel="stylesheet" type="text/css" href="icon_2.css">
+  <link rel="stylesheet" type="text/css" href="section.css">
+  <link rel="stylesheet" type="text/css" href="header_2.css">
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="skills.css">
+  <link rel="stylesheet" type="text/css" href="education.css">
+  <link rel="stylesheet" type="text/css" href="workExperience.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
@@ -23,70 +33,65 @@
 
 <body>
   <!-- <header>
-    <nav class="navbar">
-      <h1><a class="name" href="#home">Vinod Yedla</a></h1>
-      <img class="Vy" src="assets/img/vy.jpg">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work-experience">Work Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header> -->
-
-  <header>
     <div class="header-left">
         <div class="logo">            
             <h1><a class="name" href="#home">Vinod Yedla</a></h1>
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Products</a>
-                </li>
-                <li>
-                    <a href="">Pricing</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>                    
+                <li><a href="#home">Home</a></li>                
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>                    
             </ul>            
         </nav>
-    </div>
-    <div class="header-right">        
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    </div>   
 </header>
-  <main>
+<div class="header-right">        
+  <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div> -->
+  <div class="icon-bar">
+    <a class="active" href="#home"><i class="fa fa-home"><span class="navItemName">Home</span></i></a>
+    <a href="#about"><i class="fa fa-user"><span class="navItemName">About</span></i></a>
+    <a href="#education"><i class="fas fa-graduation-cap"><span class="navItemName">Education</span></i></a>
+    <a href="#skills"><i class="fa fa-cogs"><span class="navItemName">Skills</span></i></a>
+    <a href="#work-experience"><i class="fa fa-briefcase"><span class="navItemName">Works</span></i></a>
+    <a href="#contact"><i class="fa fa-phone"><span class="navItemName">Contact</span></i></a>
+  </div>
 
+  <main>
     <section class="home" id="home">
 
       <div class="content">
-        <h2 class="hello"></h2>
-        <h2 class="hello_name">I'm <span></span></h2>
-        <p>Systems Engineer | <span class="typing-text">Tech-obsessed</span></p>
-        <div class="socials">
-          <div class="about_hire-me">
-            <a href="#about" class="btn_about-me"><span>About Me</span>
-              <i class="fas fa-arrow-circle-down"></i>
-            </a>
-            <a href="#contact" class="btn_hire-me"><span>Hire Me <i class="fas fa-handshake"></i></span></a>
-            <a href="assets/pdf/VinodYedla_Software_Engineer_1.5Exp.pdf" target="_blank" class="btn_Resume">
-              <span>Resume <i class="fas fa-download"></i></span>
-            </a>
+        <div class="image">
+        </div>
+        <div class="welcome-section">
+          <h2 class="hello">Hello! Hi there,</h2>
+          <h2 class="hello_name">I'm <span></span></h2>
+          <p>Systems Engineer | <span class="typing-text">Tech-obsessed</span></p>
+
+          <div class="about-me_resume_btn">
+            <ul>
+              <li>
+                <a href="#about" class="btn_about-me"><span>About Me</span>
+                  <i class="fas fa-arrow-circle-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="assets/pdf/VinodYedla_Software_Engineer_1.5Exp.pdf" target="_blank" class="btn_Resume">
+                  <span>Resume <i class="fas fa-download"></i></span>
+                </a>
+              </li>
+            </ul>
           </div>
-
-
+        </div>
+        <div class="socials">
           <ul class="social-icons">
             <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/vinod-yedla/"
                 target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -94,16 +99,16 @@
                   class="fab fa-github"></i></a></li>
             <li><a class="dev" aria-label="Dev" href="https://linktr.ee/vinodyedla" target="_blank"><i
                   class="fab fa-dev"></i></a></li>
-            <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/vinod_yedla/"
-                target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
             <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/Im_VinodY" target="_blank"><i
                   class="fab fa-twitter"></i></a></li>
+            <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/vinod_yedla/"
+                target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
             <li><a class="telegram" aria-label="Telegram" href="https://t.me/@root808027" target="_blank"><i
                   class="fab fa-telegram-plane"></i></a></li>
           </ul>
         </div>
       </div>
-      <div class="image">
+      <div class="image1">
       </div>
       <!-- <div class="open-to-work"><h1>Vinod</h1></div> -->
     </section>
@@ -112,6 +117,9 @@
     <section id="about" class="about-link">
       <h3 class="about-transparent">About</h3>
       <div class="about-container">
+        <!-- <div class="about-profile-image">
+          <img src="assets/img/profile2.png" alt="vinod profile">
+        </div> -->
         <div class="about-description">
           <p>&emsp;&emsp; Greetings and welcome to my web-portfolio, I am <span class="highlight">Vinod Yedla,</span>
             a recent graduate from the IIIT-N with a Bachelor's degree in Computer Science Engineering.
@@ -121,6 +129,8 @@
             I am dedicated to finding innovative solutions to real-world problems and staying up-to-date with the
             latest advancements in technology.
           </p>
+        </div>
+        <div class="shortcuts">
           <a href="#education" class="btn" data-target="education"
             style="text-decoration:none;color:rgb(237, 100, 157);font-size: 22px;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i
               class="fas fa-laptop-code" style="font-size:25px;color:rgb(78, 75, 77);"></i> Education &ensp;&ensp;</a>
@@ -130,9 +140,6 @@
           <a href="#contact" class="btn" data-target="contact"
             style="text-decoration:none;color:rgb(240, 88, 50);font-size: 22px;"><i class="far fa-address-card"
               style="font-size:25px;color:rgb(78, 75, 77);"></i> Connect </a>
-        </div>
-        <div class="about-profile-image">
-          <img src="assets/img/profile2.png" alt="vinod profile">
         </div>
       </div>
     </section>

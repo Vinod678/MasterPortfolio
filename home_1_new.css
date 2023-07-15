@@ -1,0 +1,24 @@
+.home .content {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of elements */
+  }
+  
+  @media only screen and (max-width: 999px) {
+    .home .content {
+      flex-direction: column; /* Reset to default column direction for smaller screens */
+    }
+  }
+  
+  .home .welcome-section {
+    flex: 1; /* Take up remaining horizontal space */
+    padding-right: 20px; /* Add spacing between elements */
+  }
+  
+  .home .image {
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-image: url('assets/img/profile2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  

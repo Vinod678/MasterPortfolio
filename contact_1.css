@@ -1,0 +1,157 @@
+/* ContactMe and Contact-form Css-styles ###Starts */
+
+#contact {
+    display: flex;
+    padding-top: 85px;
+  }
+  
+  .contact-me {
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-right: 10px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .div-contact-details ul li {
+    list-style-type: none;
+    padding: 8px;
+    font-size: 1.2em;
+    font-weight: 530;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .div-contact-details ul li i {
+    padding-right: 8px;
+    font-size: 1.2em;
+  }
+  
+  .div-contact-details ul li .fa-map-marker-alt {
+    color: #0ad699;
+  }
+  
+  .div-contact-details ul li .fa-envelope {
+    color: #0ad699;
+  }
+  
+  .div-contact-details ul li .fa-phone {
+    color: #0ad699;
+  }
+  
+  .contact-location {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .contactForm {
+    width: 40%;
+    padding: 26px;
+  }
+  
+  .lets-connect {
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form input,
+  form textarea {
+    margin: 10px;
+    padding: 9px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+  }
+  
+  #sendButton {
+    margin: 10px;
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  
+  #sendButton {
+    background-color: #fff;
+    border: 2px solid green;
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border: white;
+  }
+  
+  .div-contact-details {
+    padding: 45px;
+    justify-content: center;
+  }
+  
+  .contact-me h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 60px;
+    color: rgb(127, 196, 167);
+  }
+  
+  .contact-name {
+    font-size: 20px;
+    font-weight: 1600;
+  }
+  
+  .div-social-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0;
+    font-size: 20px;
+  }
+  
+  .contact-social-icons li {
+    list-style-type: none;
+  }
+  
+  .contact-social-icons a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  
+  .contact-social-icons a:hover {
+    color: gray;
+  }
+  
+  .contact-social-icons a i {
+    margin: 1px;
+  }
+  
+  .div-social-icons ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  
+  .div-social-icons li {
+    padding: 10px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+    #contact {
+      flex-direction: column;
+    }
+  
+    .
+  

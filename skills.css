@@ -1,0 +1,92 @@
+/*skills section starts  */
+
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skills-container-right, .skills-container-left {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 300;
+    color: #3b345e;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skill-bar {
+    height: 14px;
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background: #497c94;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #cbcba3;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #cbcba3;
+    top: -18px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+/* @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  } */
+
+@keyframes fillBars {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: var(--per);
+    }
+}
+
+.skill-per.fill {
+    animation: fillBars 2.5s
+}
+
+
