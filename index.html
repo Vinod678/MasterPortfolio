@@ -15,8 +15,8 @@
   <meta http-equiv="refresh" content="4500000">
 
   <link rel="icon" type="images/x-icon" href="assets/img/vy.jpg" />
-  <link rel="stylesheet" type="text/css" href="stylex.css">
-  <link rel="stylesheet" type="text/css" href="icon_2.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="mobilemenu&navBar.css">
   <link rel="stylesheet" type="text/css" href="section.css">
   <link rel="stylesheet" type="text/css" href="header_2.css">
   <link rel="stylesheet" type="text/css" href="about.css">
@@ -26,45 +26,113 @@
   <link rel="stylesheet" type="text/css" href="education.css">
   <link rel="stylesheet" type="text/css" href="workExperience.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
 </head>
 
 <body>
-  <!-- <header>
-    <div class="header-left">
-        <div class="logo">            
-            <h1><a class="name" href="#home">Vinod Yedla</a></h1>
+  
+  <!-- <div class="navigation">
+    <div class="desktop-menu">
+      <a class="active" href="#home"><span class="navItemName">Home</span></a>
+      <a href="#about"><span class="navItemName">About</span></a>
+      <a href="#education"><span class="navItemName">Education</span></a>
+      <a href="#skills"><span class="navItemName">Skills</span></a>
+      <a href="#work-experience"><span class="navItemName">Works</span></a>
+      <a href="#contact"><span class="navItemName">Contact</span></a>
+    </div>
+    <div class="mobile-menu">
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu-content">
+        <div class="menu-close">
+          <i class="fas fa-times"></i>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>                
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>                    
-            </ul>            
-        </nav>
-    </div>   
-</header>
-<div class="header-right">        
-  <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+        <a class="active" href="#home"><span class="navItemName">Home</span></a>
+        <a href="#about"><span class="navItemName">About</span></a>
+        <a href="#education"><span class="navItemName">Education</span></a>
+        <a href="#skills"><span class="navItemName">Skills</span></a>
+        <a href="#work-experience"><span class="navItemName">Works</span></a>
+        <a href="#contact"><span class="navItemName">Contact</span></a>
+      </div>
+    </div>
+  </div> -->
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">Vinod Yedla</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="#home">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="#about">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">About</span>
+       </a>
+       <span class="tooltip">About</span>
+     </li>
+     <li>
+       <a href="#education">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Education</span>
+       </a>
+       <span class="tooltip">Education</span>
+     </li>
+     <li>
+       <a href="#skills">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Skills</span>
+       </a>
+       <span class="tooltip">Skills</span>
+     </li>
+     <li>
+       <a href="#work-experience">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Work Experience</span>
+       </a>
+       <span class="tooltip">Works</span>
+     </li>
+     <li>
+       <a href="#contact">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
+     <li>
+       <a href="#contact">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Hire-Me</span>
+       </a>
+       <span class="tooltip">Hire-Me</span>
+     </li>
+     <li class="sidebar-social-icon">
+      <div class="social-media">
+       <ul class="social-icon-sidebar">
+         <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/vinod-yedla/"
+             target="_blank"><i class="fab fa-linkedin"></i></a></li>            
+         <li><a class="dev" aria-label="Dev" href="https://linktr.ee/vinodyedla" target="_blank"><i
+               class="fab fa-dev"></i></a></li>
+         <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/Im_VinodY" target="_blank"><i
+               class="fab fa-twitter"></i></a></li>                        
+       </ul>
+      </div>         
+  </li>
+    </ul>
   </div>
-</div> -->
-  <div class="icon-bar">
-    <a class="active" href="#home"><i class="fa fa-home"><span class="navItemName">Home</span></i></a>
-    <a href="#about"><i class="fa fa-user"><span class="navItemName">About</span></i></a>
-    <a href="#education"><i class="fas fa-graduation-cap"><span class="navItemName">Education</span></i></a>
-    <a href="#skills"><i class="fa fa-cogs"><span class="navItemName">Skills</span></i></a>
-    <a href="#work-experience"><i class="fa fa-briefcase"><span class="navItemName">Works</span></i></a>
-    <a href="#contact"><i class="fa fa-phone"><span class="navItemName">Contact</span></i></a>
-  </div>
-
+  
+  
   <main>
     <section class="home" id="home">
 
