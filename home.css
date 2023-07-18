@@ -335,7 +335,7 @@
 
 /* Media Queries for about-me && resume buttons */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .about-me_resume_btn li a {
     text-decoration: none;
     color: #333;
@@ -344,6 +344,59 @@
     overflow: hidden;
     transition: all 0.3s ease;
     font-size: 41px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+} */
+
+@media (max-width: 767px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #e8266a;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 31px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+}
+
+/* Medium screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #1cb11c;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 35px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #162cd1;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 40px;
   }
   .about-me_resume_btn li {
     display: inline-block;

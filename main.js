@@ -1,16 +1,4 @@
 
-/* Add JavaScript to handle the scroll event and toggle the "scrolled" class on the navbar */
-
-// window.addEventListener("scroll", function () {
-//   var navbar = document.querySelector(".navbar");
-//   if (window.pageYOffset > 0) {
-//     navbar.classList.add("scrolled");
-//   } else {
-//     navbar.classList.remove("scrolled");
-//   }
-// });
-
-
 /* Add javascript to add active class and scroll to top on link click */
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', event => {
@@ -25,25 +13,6 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-/* Add javascript to change navbar style when scrolled */
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 0) {
-//     document.querySelector('.navbar').classList.add('scrolled');
-//     document.querySelectorAll('section').forEach(section => {
-//       section.classList.add('scrolled');
-//     });
-//   } else {
-//     document.querySelector('.navbar').classList.remove('scrolled');
-//     document.querySelectorAll('section').forEach(section => {
-//       section.classList.remove('scrolled');
-//     });
-//   }
-// });
-
-
-
-
-
 
 
 let navbar = document.querySelector('.navbar');
@@ -56,10 +25,6 @@ links.forEach(link => {
     section.classList.add('move');
   });
 });
-
-
-
-
 
 
 
@@ -137,11 +102,6 @@ document.getElementById("view-more-link2").addEventListener("click", function (e
 
 
 // page refresh go back to top
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
-
-
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
@@ -222,17 +182,6 @@ observer.observe(skillsSection);
 
 
 
-// CourseBox random colors generate
-// var courseBoxes = document.getElementsByClassName("course-box");
-// for (var i = 0; i < courseBoxes.length; i++) {
-//     courseBoxes[i].style.backgroundColor = "#" + (Math.floor(Math.random() * 16777215)).toString(16);
-// }
-
-
-
-
-
-
 // Typing text tech-obsessed1,2,3
 const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
   let index = 0;
@@ -273,65 +222,33 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
   // }
   
 
-
-  // new header 
-  // hamburger = document.querySelector(".hamburger");
-  //       nav = document.querySelector("nav");
-  //       hamburger.onclick = function() {
-  //           nav.classList.toggle("active");
-  //       }
-// Nav disappear ,when user clicked on any <a>
-
-
-
-  // JavaScript code to handle mobile menu toggle
-// JavaScript code to handle mobile menu toggle
-// document.addEventListener('DOMContentLoaded', function() {
-//   var menuToggle = document.querySelector('.menu-toggle');
-//   var menuContent = document.querySelector('.menu-content');
-//   var menuClose = document.querySelector('.menu-close');
-//   var mobileMenu = document.querySelector('.mobile-menu');
-
-//   menuToggle.addEventListener('click', function() {
-//     mobileMenu.classList.add('open');
-//   });
-
-//   menuClose.addEventListener('click', function() {
-//     mobileMenu.classList.remove('open');
-//   });
-
-//   document.addEventListener('click', function(event) {
-//     if (!mobileMenu.contains(event.target) && !event.target.classList.contains('menu-toggle')) {
-//       mobileMenu.classList.remove('open');
-//     }
-//   });
-// });
-
-
-
 // nav bar
 
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
+// let searchBtn = document.querySelector(".bx-search");
+let navLinks = document.querySelectorAll(".nav-list a");
 
-closeBtn.addEventListener("click", ()=>{
-  sidebar.classList.toggle("open");
-  menuBtnChange();//calling the function(optional)
-});
-
-searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+closeBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
   menuBtnChange(); //calling the function(optional)
 });
 
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+});
+
 // following are the code to change sidebar button(optional)
 function menuBtnChange() {
- if(sidebar.classList.contains("open")){
-   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
- }else {
-   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
- }
+  if (sidebar.classList.contains("open")) {
+    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+  } else {
+    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+  }
 }
+
 
 
