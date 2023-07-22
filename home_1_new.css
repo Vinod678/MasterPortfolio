@@ -1,24 +1,537 @@
 .home .content {
-    display: flex;
-    flex-direction: row-reverse; /* Reverse the order of elements */
-  }
-  
-  @media only screen and (max-width: 999px) {
-    .home .content {
-      flex-direction: column; /* Reset to default column direction for smaller screens */
-    }
-  }
-  
-  .home .welcome-section {
-    flex: 1; /* Take up remaining horizontal space */
-    padding-right: 20px; /* Add spacing between elements */
-  }
-  
-  .home .image {
-    width: 50%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    background-image: url('assets/img/profile2.png');
+  flex: 1 1 40rem;
+  /* padding-top: 1rem; */
+  /* z-index: 1; */
+  float: left;
+  /* margin-left: 250px; */
+  margin: 0 auto;
+}
+
+
+/* Media Responsive for Home image laptop  : min-width: 1000px*/
+
+@media (min-width: 1000px) {
+  #home {  
     background-size: cover;
     background-position: center;
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;  
+    margin-top: 10%;
   }
-  
+  .home .image {
+      display: none;
+  }
+  .home .image1 {
+  background-image: url(assets/img/profile2.png);
+  width: 29vw;
+  height: 28vw;
+  min-width: 120px;
+  min-height: 150px;
+  /* margin-right: 1.2rem; */
+  cursor: pointer;
+  border-radius: 40%;
+  border-color: #070707;
+  transform: perspective(200px) rotateY(360deg);;
+  transition: transform 0.9s ease;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* max-width: 1000px */
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  #home {  
+    background-size: cover;
+    background-position: center;
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;  
+    margin-top: 18%;
+  }
+
+  .home .content {
+    flex: 1 1 auto; /* Remove the fixed width */
+    float: none; /* Remove the float */
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .home .image1 {
+    display: none;
+  }
+.home .image {
+  background-image: url(assets/img/profile2.png);
+  width: 680px;
+  align-items: center;
+  height: 651px;
+  cursor: pointer;
+  border-radius: 40%;
+  border-color: #070707;
+  transform: perspective(200px) rotateY(360deg);;
+  transition: transform 0.9s ease;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+} 
+.welcome-section{
+  margin-top: 16%;
+  text-align: center;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  #home {  
+    background-size: cover;
+    background-position: center;
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;  
+    margin-top: 28%;
+  }
+
+  .home .content {
+    flex: 1 1 auto; /* Remove the fixed width */
+    float: none; /* Remove the float */
+    margin-left: 0; /* Remove the left margin */
+  }
+
+  .home .image1 {
+    display: none;
+  }
+.home .image {
+  background-image: url(assets/img/profile2.png);
+  width: 400px;
+  align-items: center;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 40%;
+  border-color: #070707;
+  transform: perspective(200px) rotateY(360deg);;
+  transition: transform 0.9s ease;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+} 
+}
+
+
+@media (max-width: 480px) {
+  .home .content{
+      margin-left: 14%;
+      margin-right: 0;
+      margin-top: 0;
+  }  
+    .home .content {
+      /* Add styles specific to smaller screens */
+    }
+  #home {    
+    background-size: cover;
+    background-position: center;
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+    /* padding-top: -101px; */
+    margin-top: 15%;
+  }
+}
+
+
+
+.typing-text {
+  font-size: 15px;
+  /* border-right: 2px solid #ddd; */
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s infinite;
+  width: 180px;
+  /* animation: typing 3s steps(40, end); */
+}
+
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 100%;
+  }
+}
+
+.home .content h2 {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: #094853;
+  padding: 0.3rem 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+@media only screen and (min-width: 1000px) {
+.home .content h2:hover {
+  color: #0077b6;
+}
+
+.home .content h2 span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #004984;
+  padding: 0.5rem 0;
+}
+
+.home .content p {
+  font-size: 2.0rem;
+  color: rgb(180, 59, 59);
+  font-weight: 600;
+  padding: 0.5rem 0;
+  margin-top: 10px;
+}
+
+.home .content p span {
+  font-size: 2.0rem;
+  color: rgb(133, 151, 175);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  .home .content h2 {
+  font-size: 2.9rem;
+  font-weight: 250px;
+  color: #094853;
+  padding: 0.6rem 0;
+  margin-top: 1px;
+  margin-bottom: 15px;
+
+}
+.home .content h2 span {
+  font-size: 4.9rem;
+  font-weight: 550px;
+  color: #004984;
+  padding: 0.5rem 0;
+}
+.home .content p {
+  font-size: 2.6rem;
+  color: rgb(180, 59, 59);
+  font-weight: 600;
+  padding: 0.7rem 0;
+  margin-top: 10px;
+}
+
+.home .content p span {
+  font-size: 2.3rem;
+  color: rgb(133, 151, 175);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  .home .content h2 {
+  font-size: 1.3rem;
+  font-weight: 200px;
+  color: #094853;
+  padding: 0.3rem 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+.home .content h2 span {
+  font-size: 2.0rem;
+  font-weight: 500px;
+  color: #51d7ca;
+  padding: 0.5rem 0;
+}
+.home .content p {
+  font-size: 1.6rem;
+  color: rgb(180, 59, 59);
+  font-weight: 400;
+  padding: 0.5rem 0;
+  margin-top: 8px;
+}
+
+.home .content p span {
+  font-size: 1.8rem;
+  color: rgb(133, 151, 175);
+  font-weight: 500;
+  padding: 1rem 0;
+}
+}
+
+
+
+/* about-me && resume buttons */
+  .about-me_resume_btn ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 20px;
+  }
+
+  .about-me_resume_btn li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .about-me_resume_btn li a:hover {
+    color: #ff0000;
+  }
+
+  .about-me_resume_btn li a:hover:before {
+    transform: scaleX(1);
+  }
+
+  .about-me_resume_btn li .btn_about-me {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .about-me_resume_btn li .btn_Resume {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+/* Media Queries for about-me && resume buttons */
+
+/* @media only screen and (max-width: 1000px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 41px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+} */
+
+@media (max-width: 767px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #e8266a;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 31px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+}
+
+/* Medium screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #1cb11c;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 35px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+  .about-me_resume_btn li a {
+    text-decoration: none;
+    color: #162cd1;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 40px;
+  }
+  .about-me_resume_btn li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 16px;
+  }
+}
+
+
+/* social icons start */
+
+.socials {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icons a {
+  font-size: 1.8rem;
+  display: inline-block;
+  line-height: 45px;
+  color: #27203c;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* .socials .social-icons li a{
+  color: rgb(21, 125, 129);
+} */
+.social-icons .linkedin {
+  color: #0e76a8; /* Set the color for the LinkedIn icon */
+}
+
+.social-icons .github {
+  color: #333; /* Set the color for the GitHub icon */
+}
+
+.social-icons .dev {
+  color: #0a0a0a; /* Set the color for the Dev icon */
+}
+
+.social-icons .instagram {
+  color: #c13584; /* Set the color for the Instagram icon */
+}
+
+.social-icons .twitter {
+  color: #1da1f2; /* Set the color for the Twitter icon */
+}
+
+.social-icons .telegram {
+  color: #0088cc; /* Set the color for the Telegram icon */
+}
+
+
+  /* @media only screen (max-width: 1000px) { 
+  .socials {
+    margin-left: 0%;
+  }
+  .socials .social-icons {
+    padding-left: 0;
+    margin-bottom: 300px;
+    list-style: none;
+  }
+  .social-icons a {
+    font-size: 8.8rem;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    margin-top: 200px;
+    padding: 20px;
+  }
+} */
+
+@media only screen and (min-width: 951px) and (max-width: 1000px){
+  .socials {
+    margin-left: 0%;
+  }
+  .socials .social-icons {
+    padding-left: 0;
+    margin-bottom: 300px;
+    list-style: none;
+  }
+  .social-icons a {
+    font-size: 4.8rem;
+    margin-right: 38px;
+    margin-bottom: 2px;
+    margin-top: 200px;
+    padding: 20px;
+  }
+}
+
+
+
+/* .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #7d2727;
+  background-color: #f1f7fa;
+}
+
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dev:hover {
+  background-color: #070707;
+}
+
+.social-icons a.instagram:hover {
+  background-color: #ee00da;
+} */
+
+/* social icons end */
+/* Media Queries for social icons */
+@media (max-width: 450px) {
+  .socials {
+      margin-top: 12rem;
+  }
+}

@@ -250,5 +250,14 @@ function menuBtnChange() {
   }
 }
 
+// Close sidebar when clicking outside
+document.addEventListener("click", (event) => {
+  const targetElement = event.target;
+  if (!sidebar.contains(targetElement) && !targetElement.matches("#btn")) {
+    sidebar.classList.remove("open");
+    menuBtnChange(); // calling the function (optional)
+  }
+});
+
 
 

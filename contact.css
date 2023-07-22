@@ -1,194 +1,255 @@
-/*ContactMe and Contact-form   Css-styles ###Starts*/
-
-/* section.contact.scrolled {
-    padding-top: 200px;
-
-    
-} */
+/* ContactMe and Contact-form CSS styles */
 
 #contact {
     display: flex;
-    padding-top: 85px;
-}
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
 
-/* .contact-me, .contactForm {
-    flex: 1;
-  } */
 
-.contact-me {
-    width: 60%;
+  /* Border for contact section and dots */
+  #contact {
+    position: relative;
+    border: 2px solid #000;
+    padding: 20px;
+  }
+  
+  #contact::before,
+  #contact::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+  
+  #contact::before {
+    top: -6px;
+    left: -6px;
+  }
+  
+  #contact::after {
+    bottom: -6px;
+    right: -6px;
+  }
+   /*Ends here Border for contact section and dots */
+  
+  .contact-me {
+    width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-right: 10px;
+    margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
-    /* transform: perspective(400px) rotateY(-6deg); */
-}
-
-/* Div-contact-details */
-
-.div-contact-details ul li {
+  }
+  
+  .div-contact-details ul li {
     list-style-type: none;
     padding: 8px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 530;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.div-contact-details ul li i {
+  }
+  
+  .div-contact-details ul li i {
     padding-right: 8px;
     font-size: 1.2em;
-}
-
-.div-contact-details ul li .fa-map-marker-alt {
+  }
+  
+  .div-contact-details ul li .fa-map-marker-alt {
     color: #0ad699;
-}
-
-.div-contact-details ul li .fa-envelope {
+  }
+  
+  .div-contact-details ul li .fa-envelope {
     color: #0ad699;
-}
-
-.div-contact-details ul li .fa-phone {
+  }
+  
+  .div-contact-details ul li .fa-phone {
     color: #0ad699;
-}
-
-.contact-location {
+  }
+  
+  .contact-location {
     text-decoration: none;
     color: black;
-}
-
-.contactForm {
-    width: 40%;
-    /* margin: 190px; */
+  }
+  
+  .contactForm {
+    width: 100%;
     padding: 26px;
-}
-
-.contactForm {
     background-color: rgb(127, 196, 167);
-    /* align-content: center;
-    justify-content: center; */
-    /* padding: 02px; */
     border-radius: 10px;
-}
-
-.lets-connect {
+  }
+  
+  .lets-connect {
     font-size: 30px;
     margin-left: 50px;
     color: white;
-}
-
-form {
+  }
+  
+  .form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-form input, form textarea {
+  }
+  
+  .form input,
+  .form textarea {
     margin: 10px;
     padding: 9px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 5px;
     border: none;
     font-size: 1.2em;
-}
-
-#sendButton {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    border-color: #0ad699;
+  }
+  
+  #sendButton {
     margin: 10px;
     padding: 8px;
     width: 100px;
     border-radius: 5px;
     border: none;
     font-size: 1em;
-}
-
-#sendButton {
     background-color: #fff;
     border: 2px solid green;
     color: green;
     cursor: pointer;
     font-weight: bold;
-    /* margin-left: auto; */
-    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #sendButton:hover {
+    background-color: green;
+    color: #fff;
+  }
+  
+  #success-message {
+    display: none;
+    text-align: center;
     margin-top: 20px;
-    padding: 10px;
-    border: white;
-}
-
-/* #success-message {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} */
-
-#success-message p {
+  }
+  
+  #success-message p {
     font-size: 20px;
     color: rgb(244, 245, 210);
-    justify-content: center;
-    margin-left: 100px;
-}
-
-/*Div contact-me and div-contact-details  */
-
-.div-contact-details {
+  }
+  
+  .div-contact-details {
     padding: 45px;
     justify-content: center;
-}
-
-
-
-.contact-me h3 {
+  }
+  
+  .contact-me h3 {
     font-weight: bold;
     font-size: 32px;
     margin-left: 50px;
     margin-top: 60px;
     color: rgb(127, 196, 167);
-}
-
-.contact-name {
+  }
+  
+  .contact-name {
     font-size: 20px;
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-weight: bold; */
     font-weight: 1600;
-}
-
-.div-social-icons {
+  }
+  
+  .div-social-icons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-left: 0;
     font-size: 20px;
-}
-
-.contact-social-icons li {
+  }
+  
+  .contact-social-icons li {
     list-style-type: none;
-}
-
-.contact-social-icons a {
+  }
+  
+  .contact-social-icons a {
     color: black;
     font-size: 1em;
     text-decoration: none;
-}
-
-.contact-social-icons a:hover {
+  }
+  
+  .contact-social-icons a:hover {
     color: gray;
-}
-
-.contact-social-icons a i {
+  }
+  
+  .contact-social-icons a i {
     margin: 1px;
-}
-
-.div-social-icons ul {
+  }
+  
+  .div-social-icons ul {
     display: flex;
     list-style-type: none;
-    /* margin: 10px;; */
-    /* padding: 10px; */
-    /* white-space: 10px; */
     justify-content: flex-start;
-    /* padding: 10px; */
-}
-
-.div-social-icons li {
+  }
+  
+  .div-social-icons li {
     padding: 10px;
+  }
+  @media (max-width: 420px) {
+  .contact-me h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: rgb(127, 196, 167);
+  }
+  .div-contact-details {
+    padding:10px;
+    justify-content: center;
 }
+.lets-connect {
+    font-size: 25px;
+    margin-left: 50px;
+    color: white;
+}
+  }
 
+  @media (min-width: 576px) {
+    .contact-me,
+    .contactForm {
+      width: 90%;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contact-me,
+    .contactForm {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .contact-me {
+      width: 55%;
+    }
+  
+    .contactForm {
+      width: 40%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .contact-me {
+      width: 60%;
+    }
+  
+    .contactForm {
+      width: 35%;
+    }
+  }
+  
