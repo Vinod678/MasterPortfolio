@@ -1,0 +1,209 @@
+/* Add your other styles here */
+@media only screen and (max-width: 1000px){
+section #work-experience {
+    margin-left: 21%;
+    margin-right: 5%;
+    padding: 0%;
+}
+.work-container {
+    margin-left: 0px;
+}
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-left: 200px; */
+  }
+  /* .work-container{
+    background: #595858;
+background: -webkit-linear-gradient(0deg, #595858 0%, #ffffff 100%);
+background: linear-gradient(0deg, #595858 0%, #ffffff 100%);
+  } */
+  /* .each-work-card{
+    background: #bfe8ff;
+background: -webkit-linear-gradient(0deg, #bfe8ff 0%, #f0f6f2 100%);
+background: linear-gradient(0deg, #bfe8ff 0%, #f0f6f2 100%);
+  } */
+.each-work-card{
+    /* -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+-moz-box-shadow: 3px 3px 10px 3px #dddddd;
+box-shadow: 3px 3px 10px 3px #dddddd; */
+-webkit-box-shadow: 13px -8.5px 13px -0.5px #ddd;
+-moz-box-shadow: 13px -8.5px 13px -0.5px #ddd;
+box-shadow: 13px -8.5px 13px -0.5px #ddd;
+}
+  
+  .each-work-card {
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  
+  .each-work-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .each-work-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .CompanyNameDetail {
+    font-weight: bold;
+  }
+  
+  .CompLocation {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .CompLocation .compLocName {
+    margin-left: 5px;
+  }
+  
+  .date {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .description-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .description-list li:not(:first-child) {
+    display: none;
+  }
+  
+  .view-more-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content .CompanyNameDetail {
+    font-weight: bold;
+  }
+  
+  .popup-content .CompLocation {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .popup-content .CompLocation .compLocName {
+    margin-left: 5px;
+  }
+  
+  .popup-content .date {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .popup-content .description-list {
+    list-style-type: none;
+    padding: 0;
+    margin
+  }
+
+
+  /* Add your existing CSS styles here */
+
+/* Add the following styles for the pop-up box */
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  
+  .popup-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .popup-content p {
+    margin-bottom: 10px;
+  }
+  
+  .popup-content ul {
+    margin-bottom: 15px;
+  }
+  
+  .popup-content a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Add responsive styles if needed */
+  

@@ -1,6 +1,7 @@
 section{
     margin-left: 250px;
     margin-right: 100px;
+    /* background-color: #fbfbfd; */
 }
 
 @media only screen and (max-width: 1000px) {

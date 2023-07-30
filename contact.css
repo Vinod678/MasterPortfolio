@@ -12,18 +12,18 @@
   /* Border for contact section and dots */
   #contact {
     position: relative;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     padding: 20px;
   }
   
   #contact::before,
-  #contact::after {
+  /* #contact::after {
     content: "";
     position: absolute;
     width: 10px;
     height: 10px;
     background-color: #000;
-  }
+  } */
   
   #contact::before {
     top: -6px;
@@ -71,7 +71,7 @@
   
   .contact-location {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   .contactForm {
@@ -246,10 +246,16 @@
   @media (min-width: 1200px) {
     .contact-me {
       width: 60%;
+      border-color: #0ad699;
+      background-color: #4e647a;
+      border: 2px solid green;
     }
   
     .contactForm {
       width: 35%;
+    }
+    .contact-me .div-contact-details ul li{
+        color: floralwhite;
     }
   }
   

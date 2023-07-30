@@ -3,6 +3,14 @@
   /* z-index: 1; */
   float: left;
   margin: 0 auto;
+  background:
+      calc( .9*23px) calc( .9*23px)/calc(2*23px) calc(2*23px) conic-gradient(at 20% 20%,#0000 75%,#ffffff 0),
+      calc(-.1*23px) calc(-.1*23px)/calc(2*23px) calc(2*23px) conic-gradient(at 20% 20%,#0000 75%,#ffffff 0),
+      calc( .7*23px) calc( .7*23px)/calc(2*23px) calc(2*23px) conic-gradient(at 40% 40%,#0000 75%,rgba(252, 252, 252, 0.9) 0),
+      calc(-.3*23px) calc(-.3*23px)/calc(2*23px) calc(2*23px) conic-gradient(at 40% 40%,#0000 75%,rgba(252, 252, 252, 0.9) 0),
+      conic-gradient(from 90deg at 20% 20%,#ffffff 25%,rgba(252, 252, 252, 0.9) 0) 
+       0 0/23px 23px;
+
 }
 
 @media (min-width: 1000px) {
@@ -42,6 +50,9 @@
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+  }
+  .home .image1:hover{
+    transform: translateY(0) scale(1.1);
   }
 }
 /* @media only screen and (min-width: 1000px) and (max-width: 1240px) {
@@ -392,7 +403,35 @@
 
 /* ################### */
 /* About-me and Resume buttons starts here */
+.btn_about-me {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.btn_about-me:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+/* @media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+} */
 
 /* about-me && resume buttons */
 .about-me_resume_btn ul {
@@ -429,7 +468,7 @@
 }
 
 .about-me_resume_btn li a:hover {
-  color: #ff0000;
+  color: #f29090;
 }
 
 .about-me_resume_btn li a:hover:before {
@@ -446,6 +485,8 @@
   background-color: #f1f1f1;
   padding: 10px;
   border-radius: 5px;
+  margin-left: 10px;
+  color:#db2e6c;
 }
 
 
@@ -687,3 +728,7 @@
 /* social icons ENDS here */
 /* #################### */
 /* #################### */
+
+
+
+

@@ -67,36 +67,36 @@ function showMessage1() {
 
 // View More button in description paragraph in workexperience
 
-document.getElementById("view-more-link1").addEventListener("click", function (event) {
-  event.preventDefault();
-  var x = document.getElementsByClassName("view-more1");
-  var link = document.getElementById("view-more-link1");
-  for (i = 0; i < x.length; i++) {
-    if (x[i].style.display === "none") {
-      x[i].style.display = "block";
-      link.innerHTML = "View Less";
-    } else {
-      x[i].style.display = "none";
-      link.innerHTML = "View More";
-    }
-  }
-});
+// document.getElementById("view-more-link1").addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var x = document.getElementsByClassName("view-more1");
+//   var link = document.getElementById("view-more-link1");
+//   for (i = 0; i < x.length; i++) {
+//     if (x[i].style.display === "none") {
+//       x[i].style.display = "block";
+//       link.innerHTML = "View Less";
+//     } else {
+//       x[i].style.display = "none";
+//       link.innerHTML = "View More";
+//     }
+//   }
+// });
 
 
-document.getElementById("view-more-link2").addEventListener("click", function (event) {
-  event.preventDefault();
-  var x = document.getElementsByClassName("view-more2");
-  var link = document.getElementById("view-more-link2");
-  for (i = 0; i < x.length; i++) {
-    if (x[i].style.display === "none") {
-      x[i].style.display = "block";
-      link.innerHTML = "View Less";
-    } else {
-      x[i].style.display = "none";
-      link.innerHTML = "View More";
-    }
-  }
-});
+// document.getElementById("view-more-link2").addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var x = document.getElementsByClassName("view-more2");
+//   var link = document.getElementById("view-more-link2");
+//   for (i = 0; i < x.length; i++) {
+//     if (x[i].style.display === "none") {
+//       x[i].style.display = "block";
+//       link.innerHTML = "View Less";
+//     } else {
+//       x[i].style.display = "none";
+//       link.innerHTML = "View More";
+//     }
+//   }
+// });
 
 
 
@@ -258,6 +258,46 @@ document.addEventListener("click", (event) => {
     menuBtnChange(); // calling the function (optional)
   }
 });
+
+
+
+
+
+// Work-experience container
+
+// Your existing JavaScript code
+
+
+const serviceItems = document.querySelector(".service-items");
+const popup = document.querySelector(".popup-box")
+const popupCloseBtn = popup.querySelector(".popup-close-btn");
+const popupCloseIcon = popup.querySelector(".popup-close-icon");
+
+serviceItems.addEventListener("click",function(event){
+  if(event.target.tagName.toLowerCase() == "button"){
+     const item =event.target.parentElement;
+     const h3 = item.querySelector("h3").innerHTML;
+     const readMoreCont = item.querySelector(".read-more-cont").innerHTML;
+     popup.querySelector("h3").innerHTML = h3;
+     popup.querySelector(".popup-body").innerHTML = readMoreCont;
+     popupBox();
+  }
+
+})
+
+popupCloseBtn.addEventListener("click", popupBox);
+popupCloseIcon.addEventListener("click", popupBox);
+
+popup.addEventListener("click", function(event){
+   if(event.target == popup){
+      popupBox();
+   }
+})
+
+function popupBox(){
+  popup.classList.toggle("open");
+}
+
 
 
 
