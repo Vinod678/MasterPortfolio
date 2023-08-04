@@ -1,9 +1,10 @@
-section{
+section {
     margin-left: 250px;
     margin-right: 100px;
     /* background-color: #fbfbfd; */
 }
 
+/* Media query for screens up to 1000px */
 @media only screen and (max-width: 1000px) {
     section {
         margin-left: 11%;
@@ -12,10 +13,39 @@ section{
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    section {
-        margin-left: 11%;
+/* Specific styles for the #education section within the media query */
+@media only screen and (max-width: 700px) {
+    #education {
+        margin-left: 2%;
         margin-right: 5%;
         padding: 0%;
     }
+    #work-experience {
+        margin-left: 2%;
+        margin-right: 5%;
+        padding: -1%;
+    }
 }
+
+
+
+/* VY loading animation */
+
+.vy-typing-animation {  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  /* font-weight: bold; */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  z-index: 9999; /* Make sure it's on top of other elements */
+}
+
+.hidden-main {
+  display: none;
+}
+/* VY loading animation ends here */
+
+

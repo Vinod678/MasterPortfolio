@@ -11,7 +11,7 @@
   } */
 
 .contact-me {
-    width: 60%;
+    width: 50%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin-right: 10px;
@@ -173,7 +173,62 @@ form input[type="submit"] {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media(max-width:420px){
+    #contact {
+        margin-left: 4%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+    #contact {
+        flex-direction: column;
+      }
+      
+      .contact-me,
+      .contactForm {
+        width: 100%;
+        padding: 10px;
+      }
+      .div-contact-details {
+          padding: 15px;
+          justify-content: center;
+      }
+      .lets-connect {
+          font-size: 26px;
+          margin-left: 45px;
+          color: white;
+    }
+    form {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .div-contact-details ul li {
+      list-style-type: none;
+      padding: 8px;
+      font-size: 0.9em;
+      font-weight: 530;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .div-contact-details ul li i {
+      padding-right: 8px;
+      font-size: 1.2em;
+  }
+  .contact-me h3 {
+      font-weight: bold;
+      font-size: 28px;
+      margin-left: 50px;
+      margin-top: 60px;
+      color: rgb(127, 196, 167);
+  }
+  form input, 
+  form textarea .placeholder{
+      margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 720px) {
     #contact {
         margin-left: 4%;
         margin-right: 5%;
@@ -183,9 +238,14 @@ form input[type="submit"] {
       flex-direction: column;
     }
     
-    .contact-me,
-    .contactForm {
+    .contact-me
+    {
       width: 100%;
+      padding: 10px;
+    }
+    
+    .contactForm {
+      width: 80%;
       padding: 10px;
     }
     .div-contact-details {
@@ -226,4 +286,39 @@ form input,
 form textarea .placeholder{
     margin-left: 10px;
 }
+}
+
+
+@media only screen and (min-width: 721px) and (max-width: 920px) {
+    #contact {
+        margin-left: 18%;
+        margin-right: 0%;
+        padding-top: 20px;
+    }
+    #contact {
+      flex-direction: column;
+    }
+    
+    .contact-me
+    {
+      width: 80%;
+      padding: 10px;
+    }
+    .contactForm {
+        width: 60%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 1120px) {
+    #contact {
+        margin-left: 4%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }    
+    .contact-me,
+    .contactForm {
+      width: 60%;
+      padding: 10px;
+    }
 }

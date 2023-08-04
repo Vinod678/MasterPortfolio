@@ -76,6 +76,11 @@ border-radius: 14% 12% 11% 13% / 11% 12% 13% 10%;
    max-width: 33.33%;
    padding: 15px;
 }
+.services .service-items .item-inner:hover{
+    /* background-color: rgb(94, 105, 110); */
+    /* border-radius: 1%; */
+    border-color:rgb(52, 80, 87);
+}
 
 .services .service-items .item-inner{
    border:2px solid #a1afbb;
@@ -101,6 +106,12 @@ background-color: #ffffff;
    margin-bottom: 30px;
    position: relative;
 }
+.services .service-items .item-inner:hover h3{
+    font-size: 20px;
+    color:#da1717;
+    margin-bottom: 30px;
+    position: relative;
+ }
 .services .service-items .item-inner h3::before{
  content: '';
  height: 1px;
@@ -133,6 +144,11 @@ background-color: #ffffff;
     /* background: #e06262; */
     /* border-radius: 1px; */
     text-decoration: underline;
+ }
+ .services .service-items .item-inner:hover .btn{
+    background: #cad4ec;
+    border-radius: 30px;
+    
  }
 
 .popup-box{
@@ -248,8 +264,18 @@ background-color: #ffffff;
     font-weight: 600;
     
 }
+.services .service-items .item-inner:hover .work-duration{    
+    color:rgb(42, 32, 32);    
+}
 .services .service-items .item-inner .companyName{
     font-size: 1.5em;
+    color: rgb(110, 61, 209);
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    
+}
+.services .service-items .item-inner:hover .companyName{
+    font-size: 1.58em;
     color: rgb(110, 61, 209);
     /* text-transform: uppercase; */
     font-weight: 500;

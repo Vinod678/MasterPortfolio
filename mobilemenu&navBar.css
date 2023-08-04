@@ -325,14 +325,13 @@
     top: 50%;
     /* right: 0; */
     left:290px;
-    transform: translateY(-50%);
-    font-size: 22px;
+    transform: translateY(-50%);    
     transition: all 0.4s ease;
-    font-size: 23px;
+    font-size: 29px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease-in;
-    border: 2px dotted #d5cccc;
+    /* border: 1px dotted #d5cccc; */
     border-radius: 14px;
   }
   .sidebar .logo-details .logo_name {
@@ -531,9 +530,8 @@
     /* right: 0; */
     /* left:290px; */
     transform: translateY(-50%);
-    font-size: 22px;
     transition: all 0.4s ease;
-    font-size: 23px;
+    font-size: 22px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease-in;

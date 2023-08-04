@@ -301,3 +301,145 @@ function popupBox(){
 
 
 
+
+// education toggle view
+// function toggleView() {
+//   const viewMoreDiv = document.querySelector('.bachelors-view-more');
+//   if (viewMoreDiv.style.display === 'none') {
+//     viewMoreDiv.style.display = 'block';
+//   } else {
+//     viewMoreDiv.style.display = 'none';
+//   }
+// }
+
+
+
+// <!-- Your HTML code goes here -->
+function toggleView() {  
+  const viewMoreDiv = document.querySelector('.bachelors-view-more');
+  const chevronDownBtn = document.querySelector('.bachelors-button.down');
+  const chevronUpBtn = document.querySelector('.bachelors-button.up');
+
+  if (viewMoreDiv.style.display === 'none') {
+    viewMoreDiv.style.display = 'block';
+    chevronDownBtn.style.display = 'none';
+    chevronUpBtn.style.display = 'inline-block';
+  } else {
+    viewMoreDiv.style.display = 'none';
+    chevronDownBtn.style.display = 'inline-block';
+    chevronUpBtn.style.display = 'none';
+  }
+}
+
+// Add click event listener to both .bachelors-view-less div and .bachelors-button.down button
+// const viewLessDiv = document.querySelector('#bachelors');
+const bachelorsViewLessDiv = document.querySelector('.bachelors-view-less');
+const chevronDownBtn = document.querySelector('.bachelors-button.down');
+
+bachelorsViewLessDiv.addEventListener('click', toggleView);
+// viewLessDiv.addEventListener('click', toggleView);
+chevronDownBtn.addEventListener('click', toggleView);
+
+
+
+// For intermediate 
+function toggleView_inter() {
+  const viewLessDiv = document.querySelector('.intermediate-view-less');
+  const viewMoreDiv_inter = document.querySelector('.intermediate-view-more');
+  const chevronDownBtn_inter = document.querySelector('.intermediate-button.down');
+  const chevronUpBtn_inter = document.querySelector('.intermediate-button.up');
+
+  if (viewMoreDiv_inter.style.display === 'none') {
+    viewMoreDiv_inter.style.display = 'block';
+    chevronDownBtn_inter.style.display = 'none';
+    chevronUpBtn_inter.style.display = 'inline-block';
+  } else {
+    viewMoreDiv_inter.style.display = 'none';
+    chevronDownBtn_inter.style.display = 'inline-block';
+    chevronUpBtn_inter.style.display = 'none';
+  }
+}
+
+// Add click event listener to the .intermediate-view-less div
+const intermediateViewLessDiv = document.querySelector('.intermediate-view-less');
+const chevronDownBtn_inter = document.querySelector('.intermediate-button.down');
+
+intermediateViewLessDiv.addEventListener('click', toggleView_inter);
+chevronDownBtn_inter.addEventListener('click', toggleView_inter);
+
+
+// For School 
+function toggleView_school() {
+  const viewLessDiv = document.querySelector('.school-view-less');
+  const viewMoreDiv_school = document.querySelector('.school-view-more');
+  const chevronDownBtn_school = document.querySelector('.school-button.down');
+  const chevronUpBtn_school = document.querySelector('.school-button.up');
+
+  if (viewMoreDiv_school.style.display === 'none') {
+    viewMoreDiv_school.style.display = 'block';
+    chevronDownBtn_school.style.display = 'none';
+    chevronUpBtn_school.style.display = 'inline-block';
+  } else {
+    viewMoreDiv_school.style.display = 'none';
+    chevronDownBtn_school.style.display = 'inline-block';
+    chevronUpBtn_school.style.display = 'none';
+  }
+}
+
+// Add click event listener to the .school-view-less div
+const schoolViewLessDiv = document.querySelector('.school-view-less');
+const chevronDownBtn_school = document.querySelector('.school-button.down');
+
+schoolViewLessDiv.addEventListener('click', toggleView_school);
+chevronDownBtn_school.addEventListener('click', toggleView_school);
+
+
+
+
+
+// #######################################################
+// VinodYedla loading animation
+
+
+
+  // Function to add the typing text animation for "VY" and hide the main content
+  function showTypingAnimation() {
+    const loadingAnimation = document.createElement("div");
+    loadingAnimation.className = "vy-typing-animation";
+    document.body.appendChild(loadingAnimation);
+
+    let text = "VinodYedla";
+    let index = 0;
+    const typingSpeed = 80; // Speed in milliseconds between each character typing
+
+    function type() {
+      loadingAnimation.innerText = text.slice(0, index);
+      index++;
+      if (index <= text.length) {
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(() => {
+          loadingAnimation.style.opacity = "0";
+          setTimeout(() => {
+            document.body.removeChild(loadingAnimation);
+            document.querySelector("main").classList.remove("hidden-main");
+          }, 500); // Remove the animation after 1 second (1000 milliseconds) fade-out duration
+        }, 100); // Keep the animation visible for 2 seconds (2000 milliseconds)
+      }
+    }
+
+    type();
+  }
+
+  // Call the function when the page is fully loaded
+  window.addEventListener("load", showTypingAnimation);
+
+// #######################################################
+// VinodYedla loading animation ENDS here
+
+
+
+
+
+
+

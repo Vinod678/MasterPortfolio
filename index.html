@@ -26,6 +26,7 @@
   <link rel="stylesheet" type="text/css" href="education.css">
   <link rel="stylesheet" type="text/css" href="workExperience_new._yt.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -36,6 +37,7 @@
   <div class="sidebar">
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus icon'></i>
+      <i class='bx bx-code icon' ></i>
       <div class="logo_name">Vinod Yedla</div>
       <i class='bx bx-menu' id="btn"></i>
     </div>
@@ -60,6 +62,13 @@
           <span class="links_name">Education</span>
         </a>
         <span class="tooltip">Education</span>
+      </li>      
+      <li>
+        <a href="#work-experience">
+          <i class='bx bx-briefcase-alt'></i>
+          <span class="links_name">Work Experience</span>
+        </a>
+        <span class="tooltip">Works</span>
       </li>
       <li>
         <a href="#skills">
@@ -67,13 +76,6 @@
           <span class="links_name">Skills</span>
         </a>
         <span class="tooltip">Skills</span>
-      </li>
-      <li>
-        <a href="#work-experience">
-          <i class='bx bx-briefcase-alt'></i>
-          <span class="links_name">Work Experience</span>
-        </a>
-        <span class="tooltip">Works</span>
       </li>
       <li>
         <a href="#contact">
@@ -110,8 +112,8 @@
   </div>
 
 
-  <main>
-    <section class="home" id="home">
+  <main class="hidden-main">
+    <section class="home fade-in-section" id="home" data-fade-in="false">
 
       <div class="content">
         <div class="image" alt="profile-image">          
@@ -159,7 +161,8 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-link">
+   
+    <section id="about" class="about-link fade-in-section" data-fade-in="false">
       <h3 class="about-transparent">About</h3>
       <div class="about-container">
         <div class="about-description">
@@ -189,94 +192,98 @@
       </div>
       <div class="EduContainer">
         <div id="bachelors">
-          <p>
-            <span class="Degree"> Bachelor Of&nbsp;Technology (<span class="btech">BTech</span>) &nbsp; <i
+          <div class="bachelors-view-less">
+            <p>
+              <span class="Degree"> Bachelor Of&nbsp;Technology (<span class="btech">BTech</span>) &nbsp; <i
                 class="fas fa-user-graduate" style="font-size:25px;color:rgb(77, 126, 172)"></i>&ensp;</span> 
             </p>
-            <p><span
-              class="DateFrom-To">Jun 2017 -
-              Aug 2021</span> </p>
-          <p><span class="UniversityName"><i class="fa fa-university"
-                style="font-size:25px;color:rgb(77, 126, 172)"></i>&ensp;
-              Rajiv Gandhi University Of knowledge Technologies </span>
-          </p>
-          <p>
-            <span class="UniversityLocation">
-              <i class="fas fa-map-marker-alt"></i>
-              <a class="Google-location" href="https://goo.gl/maps/HBjGhrfDr9kMxqij7" target="_blank">Nuzvid,
-                India</a></span>
-          </p>
-          <p style="color:rgb(185, 97, 119);font-size:21px;font-weight: bold">
-            <span class="Branch"><i class="fas fa-laptop-code"
-                style="font-size:25px;color:rgb(202, 118, 149)"></i>&ensp;Computer
-              Science & Engineering </span>
-          </p>
-          <p><span class="GPA">CGPA: </span> <span class="GPA-value">8.17</span></p>
-          <p><span class="courses">Courses: </span>
-            <span class="courses-bachelors">
-              <span class="course-box">Algorithms</span>
-              <span class="course-box">Data Structures</span>
-              <span class="course-box">Java</span>
-              <span class="course-box">C Lang</span>
-              <span class="course-box">Web-Technologies</span>
-              <span class="course-box">Discrete Maths</span>
-              <span class="course-box">Operating Systems</span>
-              <span class="course-box">DBMS</span>
-              <span class="course-box">App Development</span>
-              <span class="course-box">Cloud Computing</span>
-              <span class="course-box">Computer Networks</span>
-              <span class="course-box">S/w Engineering</span>
-              <span class="course-box">Machine Learning</span>
-            </span>
-          </p>
+            <p class="DateFrom-To">Jun 2017 - Aug 2021</p>
+            <button class="bachelors-button down" onclick="toggleView()"><i class='bx bx-chevron-down' ></i></button>            
+          </div>
+          
+          <div class="bachelors-view-more" style="display: none;">
+            <!-- Remaining content that should be visible when the button is clicked -->
+            <p class="UniversityName">
+              <i class="fa fa-university" style="font-size:20px;color:rgb(77, 126, 172)"></i>&ensp;
+                Rajiv Gandhi University Of knowledge Technologies
+            </p>
+            <p class="UniversityLocation">              
+                <i class="fas fa-map-marker-alt"></i>
+                <a class="Google-location" href="https://goo.gl/maps/HBjGhrfDr9kMxqij7" target="_blank">Nuzvid, India</a>              
+            </p>
+            <p class="Branch" style="color:rgb(185, 97, 119);">
+              <i class="fas fa-laptop-code" style="font-size:20px;color:rgb(202, 118, 149)"></i>&ensp;Computer
+                Science & Engineering
+            </p>            
+            <p>
+              <span class="courses">Courses: </span>
+              <span class="courses-bachelors">
+                <span class="course-box">Algorithms</span>
+                <span class="course-box">Data Structures</span>
+                <span class="course-box">Java</span>
+                <span class="course-box">Algorithms</span>
+                <span class="course-box">Data Structures</span>
+                <span class="course-box">Java</span>
+                <span class="course-box">Algorithms</span>
+                <span class="course-box">Data Structures</span>
+                <span class="course-box">Java</span>
+                <!-- More courses... -->
+              </span>
+            </p>            
+            <!-- <button class="bachelors-button" onclick="toggleView()"><i class='bx bx-chevron-up' ></i> -->
+              <button class="bachelors-button up" onclick="toggleView()" style="display: none;"><i class='bx bx-chevron-up' ></i></button>
+          </div>
         </div>
 
-        <!-- <hr> -->
         <div id="intermediate">
-          <p><span class="Degree">Pre University Course </span>
-          </p>
-          <p><span class="DateFrom-To">Jun 2015 - May 2017</span>
-          </p>
-          <p><span class="UniversityName"><i class="fa fa-university"
-                style="font-size:25px;color:rgb(77, 126, 172)"></i>&ensp;
-              Rajiv Gandhi University Of knowledge Technologies </span>            
-          </p>
-          <p>
-        <span class="UniversityLocation"><i class="fas fa-map-marker-alt"></i>
-          <a class="Google-location" href="https://goo.gl/maps/HBjGhrfDr9kMxqij7" target="_blank">Nuzvid,
-            India</a></span>
-      </p>
-          <p><span class="GPA">CGPA: </span> <span class="GPA-value">8.31</span></p>
-          <p><span class="courses">Courses: &ensp;</span>
-            <span class="courses-intermediate">
-              <span class="course-box">Maths</span>
-              <span class="course-box">Chemistry</span>
-              <span class="course-box">Physics</span>
-              <span class="course-box">Python</span>
-              <span class="course-box">Web Technologies</span>
-              <span class="course-box">English</span>
-            </span>
-          </p>
-
+          <div class="intermediate-view-less">            
+              <p>
+                <span class="Degree">Pre University Course </span>
+              </p>
+              <p class="DateFrom-To">Jun 2015 - May 2017</p>
+              <button class="intermediate-button down" onclick="toggleView_inter()"><i class='bx bx-chevron-down' ></i></button>            
+            </div>
+          
+          <div class="intermediate-view-more" style="display: none;">
+            <!-- Remaining content that should be visible when the button is clicked -->
+            <p class="UniversityName">
+              <i class="fa fa-university" style="font-size:20px;color:rgb(77, 126, 172)"></i>&ensp;
+                Rajiv Gandhi University Of knowledge Technologies
+            </p>
+            <p class="UniversityLocation">              
+                <i class="fas fa-map-marker-alt"></i>
+                <a class="Google-location" href="https://goo.gl/maps/HBjGhrfDr9kMxqij7" target="_blank">Nuzvid, India</a>              
+            </p>                       
+            <!-- <button class="intermediate-button" onclick="toggleView()"><i class='bx bx-chevron-up' ></i> -->
+              <button class="intermediate-button up" onclick="toggleView_inter()" style="display: none;"><i class='bx bx-chevron-up' ></i></button>
+          </div>
         </div>
 
-        <!-- <hr> -->
         <div id="school">
-          <p><span class="Degree">Secondary School Education </span> <span class="DateFrom-To">Jun 2014 - Mar
-              2015</span>
-          </p>
-          <p><span class="UniversityName"><i class="fa fa-school"
-                style="font-size:20px;color:rgb(77, 126, 172)"></i>&ensp;
-              Z.P.H.School </span>
-            <span class="UniversityLocation"><i class="fas fa-map-marker-alt"></i>
-              <a class="Google-location" href="https://goo.gl/maps/N2vVPyKaiwdyyube7" target="_blank">Etikoppaka,
-                India</a></span>
-          </p>
-          <p><span class="GPA">CGPA: </span> <span class="GPA-value">9.7</span></p>
-          </p>
-
+          <div class="school-view-less">            
+              <p>
+                <span class="Degree">Secondary School Education </span>
+              </p>
+              <p class="DateFrom-To">Jun 2014 - Mar 2015</p>
+              <button class="school-button down" onclick="toggleView_school()"><i class='bx bx-chevron-down' ></i></button>            
+            </div>
+          
+          <div class="school-view-more" style="display: none;">
+            <!-- Remaining content that should be visible when the button is clicked -->
+            <p class="UniversityName">
+              <i class="fa fa-university" style="font-size:20px;color:rgb(77, 126, 172)"></i>&ensp;
+              Z.P.H.School 
+            </p>
+            <p class="UniversityLocation">              
+                <i class="fas fa-map-marker-alt"></i>
+                <a class="Google-location" href="https://goo.gl/maps/N2vVPyKaiwdyyube7" target="_blank">Etikoppaka,
+                  India</a></span>
+            </p>                       
+            <!-- <button class="school-button" onclick="toggleView()"><i class='bx bx-chevron-up' ></i> -->
+              <button class="school-button up" onclick="toggleView_school()" style="display: none;"><i class='bx bx-chevron-up' ></i></button>
+          </div>
         </div>
-
+    
       </div>
     </section>
 
@@ -284,7 +291,7 @@
     <!-- Work-Experience starts here -->
     <!-- ########## -->
 
-    <section id="work-experience" class="services">
+    <section id="work-experience" class="services fade-in-section" data-fade-in="false">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -308,10 +315,10 @@
                   </p>
                   <p>Developed robust RESTful web services using Java 8 with spring framework......</p>
                   <div class="read-more-cont">
-                    <p class="work-duration">23 Sept 2021 – Present</p>
                     <p>
                       <span class="companyName">Infosys</span>
                     </p>
+                    <p class="work-duration">23 Sept 2021 – Present</p>
                     <p>
                       <span class="compLocation"><i class="fas fa-map-marker-alt"></i></span>
                       <span class="compLocName">Hyderabad, India</span>
@@ -360,30 +367,18 @@
                 </div>
               </div>
               <!-- item end -->
-              <!-- item start -->
-              <div class="item">
-                <div class="item-inner">
-                  <h3>Software Engineering Intern</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                  <div class="read-more-cont">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                    <img src="img/1.jpg" alt="img">
-                    <img src="img/2.jpg" alt="img">
-                  </div>
-                  <button class="btn" type="button">Read More →</button>
-                </div>
-              </div>
+              <!-- item start -->              
               <!-- item end -->
               <!-- item start -->
               <div class="item">
                 <div class="item-inner">
                   <h3>Freelancing</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                  <div class="read-more-cont">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                  <p>During freelancing, I delivered top-notch services and gained valuable experience in diverse projects. My work was consistently praised for its professionalism and quality.</p>
+                  <!-- <div class="read-more-cont">
+                    <p></p>
                   </div>
                   <button class="btn" type="button">Read More →</button>
-                </div>
+                </div> -->
               </div>
               <!-- item end -->
             </div>
@@ -413,7 +408,7 @@
     <!-- Work-Experience Ends here -->
 
     <!-- Skills section -->
-    <section id="skills" class="skills-link">
+    <section id="skills" class="skills-link fade-in-section" data-fade-in="false">
       <h2>Skills</h2>
     
       <div class="skills-container">
@@ -498,7 +493,7 @@
     
     </section>
     
-    <section id="contact">
+    <section id="contact" class="fade-in-section" data-fade-in="false">
       <div class="contact-me">
         <h3>Contact Me</h3>
         <div class="div-contact-details">
@@ -530,7 +525,7 @@
 
       <div id="container-form" class="contactForm">
         <div>
-          <h3 class="lets-connect">LetsKonnect</h3>
+          <h3 class="lets-connect">LetsConnect</h3>
         </div>
 
         <div class="form">

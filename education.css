@@ -5,8 +5,8 @@
 /* #education{
     background: #094853;
 } */
-/* 
-.education-link{
+
+/* .education-link{
     background-color: #f5f5f5;
     padding: 180px 200px 200px;
     
@@ -18,52 +18,80 @@
     border-top-right-radius: 10px;
 } */
 
+/* @media only screen and (max-width: 1000px){
+section #education{
+    margin-left: 2%;
+    margin-right: 5%;
+    padding: 0%;
+}
+} */
+
+/* 
+################button
+.education-link .EduContainer button {
+
+    background-color: #f6f9fb;
+    color: rgb(35, 32, 32);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 90%;
+    width: 88px; 
+    
+    */
+
+
 .education-link{
-        min-height: 100vh;
+        /* min-height: 100vh; */
         padding: 80px 0;
 }
 
-#bachelors {
+#bachelors{
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 2%;
     margin-left: 3%;
-    /* border: 2px solid #a4abc9; */
+    margin-right: 3%;
+    border: 1.5px solid #a4abc9;
     padding-left: 36px;
     border-radius: 20px;
     background: white;
-    border: 5px solid #ebedf5;
+    /* border: 5px solid #ebedf5; */
     padding: 21px;
+    box-sizing: border-box;
 }
 
 #bachelors:hover {
-    border-color: rgb(161, 155, 151);
+    border-color: rgb(70, 136, 143);
+    /* border: 3px solid #ebedf5; */
 }
-
 #intermediate {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 3%;
-    border: 1px solid #ebedf5;
+    margin-right: 3%;
     padding-left: 36px;
     border-radius: 20px;
     background: white;
-    border: 5px solid #ebedf5;
+    border: 3.5px solid #ebedf5;
     padding: 21px;
 }
+
 
 #intermediate:hover {
     border-color: rgb(161, 155, 151);
 }
 
 #school {
-    margin-top: 60px;
+    margin-top: 2%;
     margin-bottom: 40px;
     margin-left: 3%;
-    border: 1px solid #ebedf5;
+    margin-right: 3%;
     padding-left: 36px;
     border-radius: 20px;
     background: white;
-    border: 5px solid #ebedf5;
+    border: 4.5px solid #ebedf5;
     padding: 21px;
 }
 
@@ -71,32 +99,13 @@
     border-color: rgb(161, 155, 151);
 }
 
-/* Degree Css */
-
-.EduContainer #bachelors span.Degree {
-    font-weight: bold;
+.EduContainer span.Degree {
+    /* font-weight: bold;     */
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
-
-
-.EduContainer #intermediate span.Degree {
-    font-weight: bold;
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-}
-
-.EduContainer #school span.Degree {
-    font-weight: bold;
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-}
-
 /* (Btech) CSS */
-
 .btech {
     /* color:silver; */
     font-weight: 400;
@@ -104,99 +113,133 @@
     /* color: silver; */
 }
 
-/* University Name /SchoolName */
-
-.EduContainer #bachelors span.UniversityName {
+.EduContainer .UniversityName {
     font-weight: lighter;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #1624c9;
+    color: #3c417a;
+    margin-top: 2%;
 }
-
-.EduContainer #intermediate span.UniversityName {
-    font-weight: lighter;
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #a61bdd;
-}
-
-.EduContainer #school span.UniversityName {
-    font-weight: lighter;
-    font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1624c9;
-}
-
-/* DateFrom-To */
-
-.EduContainer #bachelors span.DateFrom-To {
-    margin-left: 40%;
+ .DateFrom-To {
+    margin-left: 70%;
     font-style: italic;
     font-size: 16px;
     color: gray;
-
-    /* right: 0; */
+    margin-top: -3%;
 }
-
-.EduContainer #intermediate span.DateFrom-To {
-    margin-left: 53%;
+.EduContainer .UniversityLocation {
+    margin-left: 70%;
     font-style: italic;
-    font-size: 16px;
-    color: gray;
-    /* right: 0; */
-}
-
-.EduContainer #school span.DateFrom-To {
-    margin-left: 47%;
-    font-style: italic;
-    font-size: 16px;
-    color: gray;
-    /* right: 0; */
-}
-
-/* University Locations */
-
-.EduContainer #bachelors span.UniversityLocation {
-    margin-left: 37%;
-    font-style: italic;
-    font-size: 16px;
+    font-size: 15px;
     color: #c75353;
+    margin-top: -3%;
     /* right: 0; */
     /* text-decoration: none; */
 }
-
-.EduContainer #intermediate span.UniversityLocation {
-    margin-left: 37%;
+.EduContainer #bachelors .Branch {
+   
+    margin-top: 2%;
+    font-size:21px;
+    font-weight: bold
     /* right: 0; */
-    font-style: italic;
-    font-size: 16px;
-    color: #c75353;
+    /* text-decoration: none; */
+}
+@media(max-width:768px){
+    #bachelors ,#intermediate, #school {
+        margin-top: 3px;
+        margin-bottom: 6px;
+        margin-left: 1%;
+        margin-right: 1%;
+        /* border: 2px solid #a4abc9; */
+        padding-left: 36px;
+        border-radius: 20px;
+        background: white;
+        border: 5px solid #ebedf5;
+        padding: 21px;
+    }
+    .EduContainer .UniversityName {
+        font-weight: 300;
+        font-size: 14px;
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        color: #379bb1;
+        margin-top: 2%;
+    }
+    .EduContainer .UniversityLocation {
+        margin-left: 40%;
+        font-style: italic;
+        font-size: 13px;
+        color: #c75353;
+        margin-top: 0%;
+        /* right: 0; */
+        /* text-decoration: none; */
+    } 
+    .EduContainer span.Degree {
+        /* font-weight: bold;     */
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    /* (Btech) CSS */
+    .btech {
+        /* color:silver; */
+        font-weight: 200;
+        color: rgb(31, 25, 25);
+        /* color: silver; */
+    }  
+    .EduContainer #bachelors .Branch {
+   
+        margin-top: 2%;
+        font-size:13px;
+        font-weight: bold
+        /* right: 0; */
+        /* text-decoration: none; */
+    }
 }
 
-.EduContainer #school span.UniversityLocation {
-    margin-left: 60%;
-    /* right: 0; */
-    font-style: italic;
-    font-size: 16px;
-    color: #c75353;
+@media (max-width:428px){
+    .DateFrom-To {
+        margin-left: 30%;
+        font-style: italic;
+        font-size: 14px;
+        color: gray;
+        margin-top: 0%;
+    } 
 }
+@media only screen and (min-width:429px) and (max-width:520px){
+    .DateFrom-To {
+        margin-left: 45%;
+        font-style: italic;
+        font-size: 14px;
+        color: gray;
+        margin-top: 0%;
+    } 
+}
+@media only screen and (min-width:520px) and (max-width:868px){
+    .DateFrom-To {
+        margin-left: 52%;
+        font-style: italic;
+        font-size: 14px;
+        color: gray;
+        margin-top: 0%;
+    } 
+}
+@media only screen and (min-width:869px) and (max-width:1108px){
+    .DateFrom-To {
+        margin-left: 70%;
+        font-style: italic;
+        font-size: 14px;
+        color: gray;
+        margin-top: 0%;
+    } 
+}
+
+
 
 .Google-location {
     text-decoration: none;
     color: #c75353;
 }
 
-
-.EduContainer span.DateFrom-To {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.EduContainer span.Degree {
-    font-style: italic;
-    font-size: 16px;
-    color: gray;
-}
 
 .EduContainer span.GPA {
     font-weight: bold;
@@ -257,23 +300,53 @@
     color: black;
 }
 
-@media(max-width:768px){
-    .EduContainer #bachelors span.Degree {
-        font-weight: bold;
-        font-size: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
-    }
-    .EduContainer #bachelors span.UniversityName {
-        font-weight: lighter;
-        font-size: 13px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #1624c9;
-    }
-    .EduContainer #bachelors span.UniversityLocation {
-        margin-left: 37%;
-        font-style: italic;
-        font-size: 11px;
-        color: #c75353;
-    }
-}
+
+
+/* View-more button -down and up */
+.education-link .EduContainer button {
+    display: inline-block;
+    /* padding: 10px 15px; */
+    /* background-color: #999fa4; */
+    /* color: rgb(35, 32, 32);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 26px;
+    transition: background-color 0.3s ease;   
+    margin-left: 90%;  */
+
+
+
+    display: inline-block;
+    /* padding: 10px 15px; */
+    background-color: #ffffff;
+    color: rgb(118 109 109);
+    border: none;
+    border-radius: -19px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+    margin-left: 90%;
+    width: 52px;
+    margin-top: -3%;
+    border-color: aliceblue;
+    transform: translate(27px, -14px);
+  }
+  /* .chevron-down{
+    content: "\f5fc";
+  } */
+  
+  .bachelors-button:hover {
+    background-color: #8da8c6;
+  }
+
+  @media(max-width:720px){
+    .education-link .EduContainer button {
+        transform: translate(-20px, 0px);
+      }
+  }
+  
+  /* You can add more specific styles as needed */
+  
+
+
