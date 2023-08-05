@@ -10,6 +10,18 @@
     justify-content: center;
     margin-top: 20px;
   }
+  .skill{
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 4px 3px #7b909c;
+-moz-box-shadow: 3px 3px 4px 3px #7b909c;
+box-shadow: 3px 3px 4px 3px #7b909c;
+  }
+  /* .skill{
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 11.5px 3px #0f0e0e;
+-moz-box-shadow: 3px 3px 11.5px 3px #0f0e0e;
+box-shadow: 3px 3px 11.5px 3px #0f0e0e;
+  } */
   
   .skill {
     flex: 0 0 calc(19.33% - 38px);
@@ -46,16 +58,41 @@
   .skill-button:hover .skill-percentage {
     display: block;
   }
+  .skill-percentage {
+    /* ... existing styles ... */
+    display: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent interactions with hidden elements */
+  }
+  .skill:hover .skill-percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+  }
+  
+  
   
   /* Responsive Styles */
   
-  @media (max-width: 768px) {
-    /* .skill {
-      flex: 0 0 100%;
-    } */
-      
+  @media (max-width: 428px) {
   .skill {
-    flex: 0 0 calc(19.33% - 38px);
+    /* flex: 0 0 calc(19.33% - 38px); */
+    flex: 0 0 calc(58.33% - 38px);
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  }
+  @media only screen and (min-width:429px)and (max-width: 768px) {  
+  .skill {
+    flex: 0 0 calc(32.33% - 25px);
+    /* flex: 0 0 calc(58.33% - 38px); */
     margin-bottom: 10px;
     display: inline-block;
   }
@@ -64,3 +101,4 @@
   .box-icon{
     font-size: 20px;
   }
+

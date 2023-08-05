@@ -80,7 +80,8 @@ section #education{
 
 
 #intermediate:hover {
-    border-color: rgb(161, 155, 151);
+    /* border-color: rgb(161, 155, 151); */
+    border-color: rgb(70, 136, 143);
 }
 
 #school {
@@ -96,7 +97,8 @@ section #education{
 }
 
 #school:hover {
-    border-color: rgb(161, 155, 151);
+    /* border-color: rgb(161, 155, 151); */
+    border-color: rgb(70, 136, 143);
 }
 
 .EduContainer span.Degree {
@@ -260,6 +262,7 @@ section #education{
     font-weight: bold;
     font-size: 17px;
     color: #837c7c;
+    margin-top: 5px;
 }
 
 .courses-bachelors {
@@ -275,7 +278,7 @@ section #education{
 }
 
 .courses-bachelors .course-box {
-    background-color: rgb(160, 214, 191);
+    background-color: rgb(255, 255, 255);
     border: 2px solid silver;
     /* border: 2px solid rgb(143, 61, 61); */
     border-radius: 5px;
@@ -285,20 +288,14 @@ section #education{
     padding: 6px;
     text-align: center;
     color: black;
+    opacity: 0.9;
+}
+.courses-bachelors .course-box{
+    -webkit-box-shadow: inset 3px 3px 4px 2px #dddddd;
+-moz-box-shadow: inset 3px 3px 4px 2px #dddddd;
+box-shadow: inset 3px 3px 4px 2px #dddddd;
 }
 
-.courses-intermediate .course-box {
-    background-color: rgb(120, 168, 190);
-    border: 2px solid silver;
-    /* border: 2px solid rgb(143, 61, 61); */
-    border-radius: 5px;
-    display: inline-block;
-    /* width: calc(23% - 13px); */
-    margin: 0 10px 10px 0;
-    padding: 6px;
-    text-align: center;
-    color: black;
-}
 
 
 

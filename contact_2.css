@@ -19,6 +19,12 @@
     /* transform: perspective(400px) rotateY(-6deg); */
 }
 
+.contact-me{
+    -webkit-box-shadow: -17px -4.5px 12px -8px #ddd;
+    -moz-box-shadow: -17px -4.5px 12px -8px #ddd;
+    box-shadow: -17px -4.5px 12px -8px #ddd;
+}
+
 /* Div-contact-details */
 
 .div-contact-details ul li {
@@ -35,15 +41,15 @@
 }
 
 .div-contact-details ul li .fa-map-marker-alt {
-    color: #0ad699;
+    color: #677e98;
 }
 
 .div-contact-details ul li .fa-envelope {
-    color: #0ad699;
+    color: #2a9bb8
 }
 
 .div-contact-details ul li .fa-phone {
-    color: #0ad699;
+    color: #c2577e;
 }
 
 .contact-location{
@@ -139,6 +145,7 @@ form input[type="submit"] {
     flex-direction: row;
     padding-left: 0;
     font-size: 20px;
+    opacity: 0.6;
 }
 
 .contact-social-icons li {
@@ -206,7 +213,7 @@ form input[type="submit"] {
   .div-contact-details ul li {
       list-style-type: none;
       padding: 8px;
-      font-size: 0.9em;
+      font-size: 1.1em;
       font-weight: 530;
       font-family: 'Courier New', Courier, monospace;
   }
@@ -218,8 +225,9 @@ form input[type="submit"] {
   .contact-me h3 {
       font-weight: bold;
       font-size: 28px;
-      margin-left: 50px;
+      margin-left: 25px;
       margin-top: 60px;
+      margin-bottom:15px;
       color: rgb(127, 196, 167);
   }
   form input, 

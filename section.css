@@ -49,3 +49,8 @@ section {
 /* VY loading animation ends here */
 
 
+/* Setting background color transparent ,when clicking */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

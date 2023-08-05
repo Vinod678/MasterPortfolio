@@ -140,46 +140,6 @@ setTimeout(type2, 200);
 // type2();
 
 
-// skills
-// let skillBars = document.querySelectorAll('.skill-bar');
-
-// skillBars.forEach((skillBar) => {
-//   let skillPercentage = skillBar.dataset.percentage;
-//   skillBar.style.width = skillPercentage + '%';
-// });
-
-
-
-
-
-
-
-
-
-//skills section animation works only when it comes
-const skillsSection = document.querySelector('#skills');
-const skillBars = document.querySelectorAll('.skill-per');
-
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.9
-}
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      skillBars.forEach(skillBar => {
-        skillBar.classList.add('fill');
-      });
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
-
-observer.observe(skillsSection);
-
-
 
 
 // Typing text tech-obsessed1,2,3
@@ -194,6 +154,70 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
     typingText.textContent = texts[index];
     index++;
   }, 2000);
+
+
+
+ // Skills percentage popup style
+
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const skillPercentages = document.querySelectorAll(".skill-percentage");
+
+  //   function showSkillPercentage(index) {
+  //     skillPercentages[index].style.display = "block";
+  //     setTimeout(() => {
+  //       skillPercentages[index].style.display = "none";
+  //       index = (index + 1) % skillPercentages.length;
+  //       showSkillPercentage(index);
+  //     }, 2000); // 3 seconds
+  //   }
+
+  //   showSkillPercentage(0);
+  // });
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const skillButtons = document.querySelectorAll(".skill-button");
+    const skillPercentages = document.querySelectorAll(".skill-percentage");
+  
+    let currentIndex = 0;
+    let timer;
+  
+    function showSkillPercentage(index) {
+      skillPercentages[index].style.display = "block";
+      timer = setTimeout(() => {
+        skillPercentages[index].style.display = "none";
+        currentIndex = (currentIndex + 1) % skillPercentages.length;
+        showSkillPercentage(currentIndex);
+      }, 2000);
+    }
+  
+    function restartTimer(index) {
+      clearTimeout(timer);
+      hideAllSkillPercentages();
+      showSkillPercentage(index);
+    }
+  
+    function hideAllSkillPercentages() {
+      skillPercentages.forEach((percentage) => {
+        percentage.style.display = "none";
+      });
+    }
+  
+    skillButtons.forEach((button, index) => {
+      button.addEventListener("mouseenter", () => {
+        restartTimer(index);
+      });
+      button.addEventListener("mouseleave", () => {
+        hideSkillPercentage(index);
+      });
+    });
+  
+    showSkillPercentage(currentIndex);
+  });
+  
+
+
 
 
 
@@ -402,7 +426,7 @@ chevronDownBtn_school.addEventListener('click', toggleView_school);
 
 
 
-  // Function to add the typing text animation for "VY" and hide the main content
+  // Function to add the typing text animation for "VinodYedla" and hide the main content
   function showTypingAnimation() {
     const loadingAnimation = document.createElement("div");
     loadingAnimation.className = "vy-typing-animation";
