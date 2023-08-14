@@ -26,6 +26,8 @@
   <link rel="stylesheet" type="text/css" href="education.css">
   <link rel="stylesheet" type="text/css" href="workExperience_new._yt.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="footer_1.css">
+  <link rel="stylesheet" type="text/css" href="animation.css">
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -38,7 +40,7 @@
     <div class="logo-details">         
       <i class='bx bxs-component icon'></i>           
       <div class="logo_name">Vinod Yedla</div>
-      <i class='bx bx-menu' id="btn"></i>
+      <i class='bx bx-menu' id="btn"></i>            
     </div>
     <ul class="nav-list">
       <li>
@@ -112,10 +114,10 @@
 
 
   <main class="hidden-main">
-    <section class="home fade-in-section" id="home" data-fade-in="false">
+    <section class="home fade-in-section" id="home" data-fade-in="false" style="animation: myAnim 2s ease 0s 0.5 normal forwards;">
 
       <div class="content">
-        <div class="image" alt="profile-image">          
+        <div class="image" alt="profile-image" style="animation: myAnim 1s ease 0s 0.8 normal forwards;">          
         </div>
         <div class="welcome-section">
           <h2 class="hello">Hello! Hi there,</h2>
@@ -149,19 +151,20 @@
                   class="fab fa-twitter"></i></a></li>
             <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/vinod_yedla/"
                 target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
-            <li><a class="telegram" aria-label="Telegram" href="https://t.me/@root808027" target="_blank"><i
-                  class="fab fa-telegram-plane"></i></a></li>
+            <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/@root808027" target="_blank"><i
+                  class="fab fa-telegram-plane"></i></a></li> -->
           </ul>
         </div>
       </div>
-      <div class="image1">
+      <div class="image1" style="animation: myAnim 2s ease 0s 0.8 normal forwards;">
       </div>
       <!-- <div class="open-to-work"><h1>Vinod</h1></div> -->
     </section>
-
+    </section>
     <!-- About Section -->
    
     <section id="about" class="about-link fade-in-section" data-fade-in="false">
+      <!-- style="animation: myAnim_about 1s ease 0s 1 normal forwards;"  -->
       <h3 class="about-transparent">About</h3>
       <div class="about-container">
         <div class="about-description">
@@ -306,20 +309,20 @@
               <div class="item">
                 <div class="item-inner">
                   <h3>Systems Engineer</h3>
-                  <p class="work-duration">23 Sept 2021 – Present</p>
                   <p>
                     <span class="companyName">Infosys</span>
                   </p>
-                  <p>
+                  <p class="work-duration">Sept 2021 – Present</p>                
+                  <!-- <p>
                     <span class="compLocation"><i class="fas fa-map-marker-alt"></i></span>
                     <span class="compLocName">Hyderabad, India</span>
-                  </p>
+                  </p> -->
                   <p>Developed robust RESTful web services using Java 8 with spring framework......</p>
                   <div class="read-more-cont">
                     <p>
                       <span class="companyName">Infosys</span>
                     </p>
-                    <p class="work-duration">23 Sept 2021 – Present</p>
+                    <p class="work-duration">Sept 2021 – Present</p>
                     <p>
                       <span class="compLocation"><i class="fas fa-map-marker-alt"></i></span>
                       <span class="compLocName">Hyderabad, India</span>
@@ -339,20 +342,20 @@
               <div class="item">
                 <div class="item-inner">
                   <h3>Software Engineering Intern</h3>
-                  <p class="work-duration">01 May 2021 – 15 Sept 2021</p>
                   <p>
                     <span class="companyName">TV2Z Inc</span>
                   </p>
-                  <p>
+                  <p class="work-duration">May 2021 – Sept 2021</p>                  
+                  <!-- <p>
                     <span class="compLocation"><i class="fas fa-map-marker-alt"></i></span>
                     <span class="compLocName">Hyderabad, India</span>
-                  </p>
+                  </p> -->
                   <p>Designed and sustained the Spring Automation framework for an OTT web application,......</p>
                   <div class="read-more-cont">
                     <p>
                       <span class="companyName">TV2Z Inc</span>
                     </p>
-                    <p class="work-duration">01 May 2021 – 15 Sept 2021</p>                   
+                    <p class="work-duration">May 2021 – Sept 2021</p>                   
                     <p>
                       <span class="compLocation"><i class="fas fa-map-marker-alt"></i></span>
                       <span class="compLocName">Hyderabad, India</span>
@@ -508,7 +511,7 @@
                 target="_blank">Hyderabad,India </a></li>
             <li> <i class="far fa-envelope"></i> vinodyedla678@gmail.com</li>
             <li> <i class="fas fa-phone"></i> +91 9381063388</li>
-          </ul>
+          </ul>          
           <div class="div-social-icons">
             <ul class="contact-social-icons">
               <li><a class="linkedin" aria-label="LinkedIn" href="https://api.whatsapp.com/send?phone=919381063388"
@@ -527,7 +530,7 @@
 
       <div id="container-form" class="contactForm">
         <div>
-          <h3 class="lets-connect">LetsConnect</h3>
+          <h3 class="lets-connect">LetsConnect!!</h3>
         </div>
 
         <div class="form">
@@ -552,6 +555,11 @@
 
     </section>
 
+    <footer class="site-footer">
+      <div class="footer-container">        
+          <p>&copy; 2023 Vinod.Yedla786. All rights reserved.</p>        
+      </div>
+    </footer>
     
     
     

@@ -253,7 +253,7 @@
 /* ################### */
 
 .home .content h2 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #094853;
   padding: 0.3rem 0;
@@ -486,7 +486,7 @@
 }
 
 .about-me_resume_btn li a:hover {
-  color: #f29090;
+  color: #e15050;
 }
 
 .about-me_resume_btn li a:hover:before {
@@ -500,11 +500,11 @@
 }
 
 .about-me_resume_btn li .btn_Resume {
-  background-color: #f1f1f1;
+  background-color: #23697533;
   padding: 10px;
   border-radius: 5px;
   margin-left: 10px;
-  color:#db2e6c;
+  color:#17184e;
 }
 
 
@@ -739,12 +739,12 @@
 
 
 
-.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+/* .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
   color: #ffffff;
   background-color: #f1f7fa;
-}
+} */
 
-.social-icons a.github:hover {
+/* .social-icons a.github:hover {
   background-color: #0e0e0e;
 }
 
@@ -763,6 +763,9 @@
 .social-icons a.instagram:hover {
   background-color: #e839da;
 }
+.social-icons a.telegram:hover {
+  background-color: #39b4e8;
+} */
 
 
 /* social icons ENDS here */

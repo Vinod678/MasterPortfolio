@@ -27,7 +27,7 @@
   position: relative;
 }
 .sidebar .logo-details i{
-   color: green;
+   color: rgb(5, 74, 5);
   }
 .sidebar .logo-details .icon{
   opacity: 0;
@@ -361,7 +361,13 @@
     opacity: 0;
     transition: all 0.5s ease;
 }
+.sidebar .logo-details i.bxs-component{
+    color: rgb(255, 255, 255);
 }
+}
+/* .sidebar .logo-details i.bxs-component{
+    color: red;
+} */
 .sidebar .social-icon-sidebar{
     display: none;
 }
@@ -564,6 +570,9 @@
     font-weight: 600;
     opacity: 0;
     transition: all 0.5s ease;
+}
+.sidebar .logo-details i.bxs-component{
+    color: rgb(255, 255, 255);
 }
 }
 

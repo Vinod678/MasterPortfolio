@@ -136,7 +136,7 @@ function type2() {
     setTimeout(type2, delay);
   }
 }
-setTimeout(type2, 200);
+setTimeout(type2, 1500);
 // type2();
 
 
@@ -268,9 +268,9 @@ navLinks.forEach((link) => {
 // following are the code to change sidebar button(optional)
 function menuBtnChange() {
   if (sidebar.classList.contains("open")) {
-    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+    closeBtn.classList.replace("bx-menu", "bx-x"); //replacing the iocns class
   } else {
-    closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+    closeBtn.classList.replace("bx-x", "bx-menu"); //replacing the iocns class
   }
 }
 
@@ -466,4 +466,73 @@ chevronDownBtn_school.addEventListener('click', toggleView_school);
 
 
 
+//Menu bar items highlight when Navigation to each section 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".fade-in-section");
+  const navLinks = document.querySelectorAll(".nav-list li a");
+
+  function highlightNavLink() {
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop - sectionHeight / 2) {
+        navLinks.forEach((navLink) => {
+          navLink.classList.remove("active");
+        });
+        navLinks[index].classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", highlightNavLink);
+});
+
+
+
+
+// ABout section animation when scroll
+// document.addEventListener("DOMContentLoaded", function() {
+//   const aboutSection = document.getElementById("about");
+
+//   window.addEventListener("scroll", function() {
+//     const sectionTop = aboutSection.getBoundingClientRect().top;
+//     const windowHeight = window.innerHeight;
+
+//     if (sectionTop < windowHeight) {
+//       aboutSection.classList.add("animate");
+//     }
+//   });
+// });
+// Education section animation when scroll
+// document.addEventListener("DOMContentLoaded", function() {
+//   const aboutSection = document.getElementById("education");
+
+//   window.addEventListener("scroll", function() {
+//     const sectionTop = aboutSection.getBoundingClientRect().top;
+//     const windowHeight = window.innerHeight;
+
+//     if (sectionTop < windowHeight) {
+//       aboutSection.classList.add("animate");
+//     }
+//   });
+// });
+
+// animation for all sections in a single function
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".fade-in-section");
+
+  const handleScroll = () => {
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight) {
+        section.classList.add("animate");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+});

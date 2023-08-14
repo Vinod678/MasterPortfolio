@@ -54,3 +54,9 @@ section {
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* for highlighting each item in nav-list */
+.nav-list li a.active {
+  background-color: #308e9a;
+  /* color: #752626;  */
+}
