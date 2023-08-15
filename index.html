@@ -110,7 +110,7 @@
         </div>
       </li>
     </ul>
-  </div>
+  </div>  
 
 
   <main class="hidden-main">
@@ -534,7 +534,8 @@
         </div>
 
         <div class="form">
-          <form action="11.php" method="post">
+          <!-- <form action="11.php" method="post"> -->
+            <form>
 
             <input type="text" id="name" placeholder="Name" name="name">
             <br>
@@ -547,7 +548,7 @@
 
             <textarea id="message" placeholder="Message" name="message"></textarea>
             <br>
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" onclick="SendMail()">
           </form>
         </div>
         <div id="success-message" style="display: none;"></div>

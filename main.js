@@ -156,25 +156,6 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
   }, 2000);
 
 
-
- // Skills percentage popup style
-
-
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const skillPercentages = document.querySelectorAll(".skill-percentage");
-
-  //   function showSkillPercentage(index) {
-  //     skillPercentages[index].style.display = "block";
-  //     setTimeout(() => {
-  //       skillPercentages[index].style.display = "none";
-  //       index = (index + 1) % skillPercentages.length;
-  //       showSkillPercentage(index);
-  //     }, 2000); // 3 seconds
-  //   }
-
-  //   showSkillPercentage(0);
-  // });
-
   
   document.addEventListener("DOMContentLoaded", function () {
     const skillButtons = document.querySelectorAll(".skill-button");
@@ -218,11 +199,7 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
   
 
 
-
-
-
-
-
+// template_0ps3qfo
   // Contact -Form EmailJS
 
   function SendMail(){
@@ -232,12 +209,11 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
       phone_number: document.getElementById("phone").value,
       message: document.getElementById("message").value
     }
-    emailjs.send("service_cbbf4ra___","template_0ps3qfo___",params )
-    // .then(function (res){
-    //   getElementById("success-message").style.display = "block";
-      // alert("Success!" + res.status);
-    // })
-    document.getElementById("success-message").style.display = "block";
+    emailjs.send("service_cbbf4ra","template_0ps3qfo",params).then(function (res){
+      // getElementById("success-message").style.display = "block";
+      alert("Success!" + res.status);
+    })
+    // document.getElementById("success-message").style.display = "block";
   }
 
   // function SendMail() {
@@ -427,36 +403,42 @@ chevronDownBtn_school.addEventListener('click', toggleView_school);
 
 
   // Function to add the typing text animation for "VinodYedla" and hide the main content
-  function showTypingAnimation() {
-    const loadingAnimation = document.createElement("div");
-    loadingAnimation.className = "vy-typing-animation";
-    document.body.appendChild(loadingAnimation);
+// Function to add the typing text animation for "VinodYedla" and hide the main content
+// Function to add the typing text animation for "VinodYedla" and hide the main content
+function showTypingAnimation() {
+  const loadingAnimation = document.createElement("div");
+  loadingAnimation.className = "vy-typing-animation";
+  document.body.appendChild(loadingAnimation);
 
-    let text = "VinodYedla";
-    let index = 0;
-    const typingSpeed = 80; // Speed in milliseconds between each character typing
+  let text = "VinodYedla";
+  let index = 0;
+  const typingSpeed = 80; // Speed in milliseconds between each character typing
 
-    function type() {
-      loadingAnimation.innerText = text.slice(0, index);
-      index++;
-      if (index <= text.length) {
-        setTimeout(type, typingSpeed);
-      } else {
+  function type() {
+    loadingAnimation.innerText = text.slice(0, index);
+    index++;
+    if (index <= text.length) {
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(() => {
+        loadingAnimation.style.opacity = "0";
         setTimeout(() => {
-          loadingAnimation.style.opacity = "0";
-          setTimeout(() => {
-            document.body.removeChild(loadingAnimation);
-            document.querySelector("main").classList.remove("hidden-main");
-          }, 500); // Remove the animation after 1 second (1000 milliseconds) fade-out duration
-        }, 100); // Keep the animation visible for 2 seconds (2000 milliseconds)
-      }
+          document.body.removeChild(loadingAnimation);
+          document.querySelector("main").classList.remove("hidden-main");
+        }, 500); // Remove the animation after 1 second (1000 milliseconds) fade-out duration
+      }, 100); // Keep the animation visible for 2 seconds (2000 milliseconds)
     }
-
-    type();
   }
 
+  type();
+}
+
+// Call the function when the page is fully loaded
+window.addEventListener("load", showTypingAnimation);
+
+
   // Call the function when the page is fully loaded
-  window.addEventListener("load", showTypingAnimation);
+  // window.addEventListener("load", showTypingAnimation);
 
 // #######################################################
 // VinodYedla loading animation ENDS here
@@ -489,6 +471,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", highlightNavLink);
 });
 
+
+// #################################
+
+// #################################
 
 
 
