@@ -23,13 +23,15 @@
   padding: 0 20px;
 }
 .contact-details {
-  box-shadow: 0 0 80px rgba(0,0,0, .3);
+  /* box-shadow: 0 0 80px rgba(0,0,0, .3); */
   border-radius: 10px;
   height: 400px;
   background-size: cover;
   background-position: top;
   padding: 35px;
   /* background: linear-gradient(to bottom, rgb(5,85,134), rgba(181,181,181, -0.20)); */
+  
+  background-image: linear-gradient(to right bottom, #ffffff, #f4f5fb, #e6ebf7, #d6e3f3, #c3dbee);
 }
 
 .contact-details h3,
@@ -198,7 +200,7 @@ button[type="submit"]:hover {
 
 .contact-social-icons a {
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
@@ -334,8 +336,8 @@ button[type="submit"]:hover {
 }
 
 .contact-details p {
-  font-size: 1rem;
-  color:#853628;
+  font-size: 1.1rem;
+  color: #241614;
   margin-bottom: 1rem;
   margin-top: 2rem;
   font-style: italic;
@@ -347,6 +349,6 @@ button[type="submit"]:hover {
 
 .contact-details p span i {
   font-size: 1.2rem;
-  color: #f00; 
+  color: rgb(236, 53, 53); 
   margin-left: 0.5rem;
 }

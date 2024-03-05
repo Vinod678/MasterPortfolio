@@ -507,14 +507,15 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  /* background-color: #333; */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 .about-me_resume_btn li a:hover {
-  color: #e15050;
+  /* color: #e15050; */
+  border-radius: 0px;
 }
 
 .about-me_resume_btn li a:hover:before {
@@ -537,17 +538,11 @@
 }
 
 .about-me_resume_btn li .btn_Resume {
-  /* background-color: #23697533;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 10px;
-  color:#17184e; */
-
-  background-color: #0a192f;
+    background-color: #00646f;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-left: 10px;
-    color: #64ffda;
+    color: #ffffff;
 }
 
 
