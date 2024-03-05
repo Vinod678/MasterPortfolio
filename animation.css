@@ -109,80 +109,6 @@
 	}
 	} 
 
-  /* #about.animate {
-	-webkit-animation-name: about;
-	animation-name: about;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	}
-	@-webkit-keyframes about {
-	0% {
-	opacity: 0;
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-	}
-	}
-	@keyframes about {
-	0% {
-	opacity: 0;
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
-	}
-	100% {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-	}
-	}  */
-
-
-
-	/* Set initial state for animation */
-/* #education {
-	opacity: 0;
-	transform: translateY(90px); 
-	transition: opacity 1s ease, transform 1s ease;
-}
-
-#education.animate{
-	-webkit-animation-name: education;
-	animation-name: education;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	}
-	@-webkit-keyframes education{
-	0% {
-	opacity: 0;
-	-webkit-transform: translate3d(0, -2000px, 0);
-	transform: translate3d(0, -2000px, 0);
-	}
-	100% {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-	}
-	}
-	@keyframes education{
-	0% {
-	opacity: 0;
-	-webkit-transform: translate3d(0, -2000px, 0);
-	transform: translate3d(0, -2000px, 0);
-	}
-	100% {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-	}
-	}  */
 
 
 
@@ -236,7 +162,7 @@
 
 
 		/* For Skills Section fadeBottom animation*/
-		#skills{
+		/* #skills{
 			opacity: 0;	
 			transform: translateY(90px); 
 		transition: opacity 1s ease, transform 1s ease;
@@ -256,7 +182,7 @@
 				transform: scaleY(1);
 				transform-origin: 100% 0%;
 			}
-		}
+		} */
 
 			/* For contact Section fadeBottom animation*/
 			#contact{

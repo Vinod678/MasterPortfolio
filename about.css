@@ -12,17 +12,20 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 50px;
-    margin-top: 52px;
+    /* margin-top: 52px; */
     font-family: Rubik,sans-serif;
     font-weight: 300;
     text-align: justify;
     text-justify: inter-word;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
   }
   .about-container{
     /* background: #d6a2f5;
 background: -webkit-linear-gradient(0deg, #d6a2f5 0%, #ffffff 100%);
 background: linear-gradient(0deg, #d6a2f5 0%, #ffffff 100%); */
-background-color: #f1f8fa;
+/* background-color: #f1f8fa; */
+background-color: #0a192f;
   }
   
   .about-description {
@@ -39,16 +42,29 @@ background-color: #f1f8fa;
   
   /* Description Styles */
   .about-description p {
-    font-size: 20px;
+    font-size: 21px;
     /* line-height: 1.5; */
-    color: #191a1d;
+    /* color: #191a1d; */
+    color: #8892b0;
     line-height: 205%;
     align-items: flex-end;
+    font-weight: 400;
 
+  }
+  .shortcuts p {
+    font-size: 21px;
+    /* line-height: 1.5; */
+    color: #8892b0;
+    line-height: 205%;
+    align-items: flex-end;
+    font-weight: 400;
+  }
+  .shortcuts p a {
+    font-weight: 100;
   }
   
   .about-description .highlight {
-    color: #ff5470;
+    color: #64ffda;
   }
   
   .about-description .btn {
@@ -83,15 +99,33 @@ background-color: #f1f8fa;
       font-size: 16px;
     }
 
+    .shortcuts p {
+      font-size: 16px;
+    }
+
+  }
+  .shortcuts{
+    padding-top: 40px;
+  }
+  .email-highlight {
+    font-size: 22px; 
+    font-weight: 400;
   }
 
   @media only screen and (max-width: 1000px) {
     .about-container .shortcuts {
-        display: none;
+        /* display: none; */
+    }
+    .shortcuts{
+      padding-top:1px;
+    }
+    /* .shortcuts p {
+      font-size: 21px;
+    } */
+    .email-highlight {
+      font-size: 16px; 
+      font-weight: 400;
     }
    
   }
   
-  .shortcuts{
-    padding-top: 40px;
-  }
