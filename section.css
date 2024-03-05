@@ -1,30 +1,64 @@
 section {
     margin-left: 250px;
-    margin-right: 100px;
+    margin-right: 80px;
     /* background-color: #fbfbfd; */
+}
+/* #contact {
+  margin-left: 11%;
+  margin-right: 6%;  
+} */
+
+.section-title h2 {
+  color: #566696;
+  font-size: 30px;
 }
 
 /* Media query for screens up to 1000px */
 @media only screen and (max-width: 1000px) {
     section {
+        /* margin-left: 11%;
+        margin-right: 5%; */
         margin-left: 11%;
-        margin-right: 5%;
+    margin-right: 6%;
         padding: 0%;
     }
+    .section-title h2 {
+      color: #566696;
+      font-size: 30px;
+  }
 }
+
 
 /* Specific styles for the #education section within the media query */
 @media only screen and (max-width: 700px) {
-    #education {
+    /* #education {
         margin-left: 2%;
         margin-right: 5%;
         padding: 0%;
-    }
+    } */
     #work-experience {
         margin-left: 2%;
         margin-right: 5%;
         padding: -1%;
     }
+    #skills {
+      margin-left: 2%;
+      margin-right: 5%;
+      padding: 0%;
+  }
+  section {
+    /* margin-left: 11%;
+    margin-right: 5%; */
+    margin-left: 6%;
+margin-right: 6%;
+    padding: 0%;
+}
+
+.section-title h2 {
+  color: #566696;
+  font-size: 20px;
+}
+
 }
 
 

@@ -65,38 +65,6 @@ function showMessage1() {
 
 
 
-// View More button in description paragraph in workexperience
-
-// document.getElementById("view-more-link1").addEventListener("click", function (event) {
-//   event.preventDefault();
-//   var x = document.getElementsByClassName("view-more1");
-//   var link = document.getElementById("view-more-link1");
-//   for (i = 0; i < x.length; i++) {
-//     if (x[i].style.display === "none") {
-//       x[i].style.display = "block";
-//       link.innerHTML = "View Less";
-//     } else {
-//       x[i].style.display = "none";
-//       link.innerHTML = "View More";
-//     }
-//   }
-// });
-
-
-// document.getElementById("view-more-link2").addEventListener("click", function (event) {
-//   event.preventDefault();
-//   var x = document.getElementsByClassName("view-more2");
-//   var link = document.getElementById("view-more-link2");
-//   for (i = 0; i < x.length; i++) {
-//     if (x[i].style.display === "none") {
-//       x[i].style.display = "block";
-//       link.innerHTML = "View Less";
-//     } else {
-//       x[i].style.display = "none";
-//       link.innerHTML = "View More";
-//     }
-//   }
-// });
 
 
 
@@ -107,20 +75,6 @@ window.onbeforeunload = function () {
 }
 
 
-
-
-// var text1 = "Hello! Hi there, ";
-// var delay = 50; // delay between characters, in milliseconds
-// var hello = document.querySelector(".hello");
-
-// function type1() {
-//   if (text1.length > 0) {
-//     hello.innerHTML += text1.charAt(0);
-//     text1 = text1.substring(1);
-//     setTimeout(type1, delay);
-//   }
-// }
-// type1();
 
 
 
@@ -143,7 +97,8 @@ setTimeout(type2, 1500);
 
 
 // Typing text tech-obsessed1,2,3
-const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
+// const texts = ['Tech-obsessed', 'TroubleShooter', 'Google-Ling' , 'Tech-Maven' , 'Tech-addict' , 'Surfing', 'Debugger'];
+const texts = ['Tech-Maven' , 'Tech-addict' , 'Surfing', 'Debugger'];
   let index = 0;
 
   setInterval(() => {
@@ -156,70 +111,56 @@ const texts = ['Tech-obsessed', 'Trouble-Shooter', 'Google-Ling'];
   }, 2000);
 
 
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const skillButtons = document.querySelectorAll(".skill-button");
-    const skillPercentages = document.querySelectorAll(".skill-percentage");
-  
-    let currentIndex = 0;
-    let timer;
-  
-    function showSkillPercentage(index) {
-      skillPercentages[index].style.display = "block";
-      timer = setTimeout(() => {
-        skillPercentages[index].style.display = "none";
-        currentIndex = (currentIndex + 1) % skillPercentages.length;
-        showSkillPercentage(currentIndex);
-      }, 2000);
-    }
-  
-    function restartTimer(index) {
-      clearTimeout(timer);
-      hideAllSkillPercentages();
-      showSkillPercentage(index);
-    }
-  
-    function hideAllSkillPercentages() {
-      skillPercentages.forEach((percentage) => {
-        percentage.style.display = "none";
-      });
-    }
-  
-    skillButtons.forEach((button, index) => {
-      button.addEventListener("mouseenter", () => {
-        restartTimer(index);
-      });
-      button.addEventListener("mouseleave", () => {
-        hideSkillPercentage(index);
-      });
-    });
-  
-    showSkillPercentage(currentIndex);
-  });
-  
 
 
-// template_0ps3qfo
-  // Contact -Form EmailJS
+// EmailJS function 
 
-  function SendMail(){
-    var params = {
-      from_name: document.getElementById("name").value,
-      email_id: document.getElementById("email").value,
-      phone_number: document.getElementById("phone").value,
-      message: document.getElementById("message").value
-    }
-    emailjs.send("service_cbbf4ra","template_0ps3qfo",params).then(function (res){
-      // getElementById("success-message").style.display = "block";
-      alert("Success!" + res.status);
-    })
-    // document.getElementById("success-message").style.display = "block";
+const contactForm = document.querySelector("#contact-form");
+const submitButton = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const phoneNumberInput = document.querySelector("#phone");
+const messageInput = document.querySelector("#message");
+
+
+const publicKey = "fDzG0x_HkPMrtvMFg";
+const serviceID = "service_cbbf4ra";
+const templateID = "template_0ps3qfo";
+
+
+emailjs.init(publicKey);
+contactForm.addEventListener("submit", e => {
+
+  e.preventDefault();
+  submitButton.innerText = "Just A Moment...";
+
+  const inputFields = {
+    name: nameInput.value,
+    email: emailInput.value,
+    phoneNumber: phoneNumberInput.value,
+    message: messageInput.value,
   }
+  emailjs.send(serviceID,templateID,inputFields)
+  .then(() => {
+    submitButton.innerText = "Message Sent Successfully";
+    nameInput.value = "",
+    emailInput.value = "",
+    phoneNumberInput.value = "",
+    messageInput.value = "";
 
-  // function SendMail() {
-  //   document.getElementById("container-form").style.display = "none";
-  //   document.getElementById("success-message").style.display = "block";
-  // }
+     // Refresh the page after 3 seconds
+     setTimeout(() => {
+      window.location.reload();
+    }, 3000);
+
+
+  }, (error) => {
+    submitButton.innerText = "Something went wrong";
+  });
+});
+
+
+
   
 
 // nav bar
@@ -400,10 +341,6 @@ chevronDownBtn_school.addEventListener('click', toggleView_school);
 // #######################################################
 // VinodYedla loading animation
 
-
-
-  // Function to add the typing text animation for "VinodYedla" and hide the main content
-// Function to add the typing text animation for "VinodYedla" and hide the main content
 // Function to add the typing text animation for "VinodYedla" and hide the main content
 function showTypingAnimation() {
   const loadingAnimation = document.createElement("div");
@@ -522,3 +459,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", handleScroll);
 });
+
+
